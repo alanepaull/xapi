@@ -1,3 +1,7 @@
+---
+layout: home
+---
+
 #intervention Recipe
 Revision: 0.1 
 

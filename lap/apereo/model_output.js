@@ -4,7 +4,7 @@
     "objectType":"Agent",
     "account":{
       "name":"12345",
-      "homePage":"https://github.com/jiscdev/analytics-udd/blob/master/predictive-core.md#student_id"
+      "homePage":"https://github.com/jiscdev/analytics-udd/blob/master/predictive-core.html#student_id"
     }
   },
   "verb":{
@@ -38,7 +38,7 @@
       "grouping":[
         {
           "objectType":"Activity",
-          "id":"https://github.com/jiscdev/analytics-udd/blob/master/predictive-core.md#mod_instance/id",
+          "id":"https://github.com/jiscdev/analytics-udd/blob/master/predictive-core.html#mod_instance/id",
           "definition":{
             "type":"http://adlnet.gov/expapi/activities/module",
             "description":{

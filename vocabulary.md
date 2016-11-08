@@ -1,3 +1,7 @@
+---
+layout: home
+---
+
 # JISC Learning Analytics Statements and Vocabulary
 The following terms are in use in the Jisc learning analytics recipes.
 NOTE: The xapi.jisc.ac.uk namespace URI may change.
@@ -15,14 +19,14 @@ Example of a verb entity, this example uses 'en' language tag, but any RFC 5646 
     },
 ``` 
 
-The following [xAPI verbs](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#verb) are defined as part of the Jisc profile:
+The following [xAPI verbs](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.html#verb) are defined as part of the Jisc profile:
 
 ### Logged in
 <table>
 <tr><th align="left">Verb</th><td>Logged in</td></tr>
 <tr><th align="left">Description</th><td>Logged in to some service </td></tr>
 <tr><th align="left">IRI</th><td> <a href="https://brindlewaye.com/xAPITerms/verbs/loggedin"> https://brindlewaye.com/xAPITerms/verbs/loggedin </a> </td></tr>
-<tr><th align="left">Recipe Example</th><td> <a href="recipes/login.md#verb">Logged in</a> </td></tr>
+<tr><th align="left">Recipe Example</th><td> <a href="recipes/login.html#verb">Logged in</a> </td></tr>
 </table>
 
 ### Logged out
@@ -30,7 +34,7 @@ The following [xAPI verbs](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-
 <tr><th align="left">Verb</th><td>Logged out</td></tr>
 <tr><th align="left">Description</th><td>Logged out of some service</td></tr>
 <tr><th align="left">IRI</th><td> <a href="https://brindlewaye.com/xAPITerms/verbs/loggedout"> https://brindlewaye.com/xAPITerms/verbs/loggedout </a> </td></tr>
-<tr><th align="left">Recipe Example</th><td> <a href="recipes/logout.md#verb">Logged out</a> </td></tr>
+<tr><th align="left">Recipe Example</th><td> <a href="recipes/logout.html#verb">Logged out</a> </td></tr>
 </table>
 
 ### Viewed
@@ -38,7 +42,7 @@ The following [xAPI verbs](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-
 <tr><th align="left">Verb</th><td>Viewed</td></tr>
 <tr><th align="left">Description</th><td>Indicates that the actor has viewed the object</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://id.tincanapi.com/verb/viewed"> http://id.tincanapi.com/verb/viewed</a> </td></tr>
-<tr><th align="left">Recipe Example</th><td> <a href="recipes/Module-View.md#verb">Object Viewed</a> </td></tr>
+<tr><th align="left">Recipe Example</th><td> <a href="recipes/Module-View.html#verb">Object Viewed</a> </td></tr>
 </table>
 
 ### Session timed out
@@ -46,7 +50,7 @@ The following [xAPI verbs](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-
 <tr><th align="left">Verb</th><td>Session timed out</td></tr>
 <tr><th align="left">Description</th><td>IIndicates the activity provider has determined that the session was abnormally terminated either by an actor or due to a system failure. </td></tr>
 <tr><th align="left">IRI</th><td> <a href="https://w3id.org/xapi/adl/verbs/abandoned">https://w3id.org/xapi/adl/verbs/abandoned</a> </td></tr>
-<tr><th align="left">Recipe Example</th><td> <a href="recipes/Session-timeout.md#verb">Session Timeout</a> </td></tr>
+<tr><th align="left">Recipe Example</th><td> <a href="recipes/Session-timeout.html#verb">Session Timeout</a> </td></tr>
 </table>
 
 ### Completed
@@ -54,7 +58,7 @@ The following [xAPI verbs](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-
 <tr><th align="left">Verb</th><td>Completed</td></tr>
 <tr><th align="left">Description</th><td>Completing an activity - finishing in its entirety</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://adlnet.gov/expapi/verbs/completed">http://adlnet.gov/expapi/verbs/completed</a> </td></tr>
-<tr><th align="left">Recipe Example</th><td> <a href="recipes/assignment-submitted.md">Assignment submitted</a> </td></tr>
+<tr><th align="left">Recipe Example</th><td> <a href="recipes/assignment-submitted.html">Assignment submitted</a> </td></tr>
 </table>
 
 ### Scored
@@ -62,7 +66,7 @@ The following [xAPI verbs](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-
 <tr><th align="left">Verb</th><td>Scored</td></tr>
 <tr><th align="left">Description</th><td>Indicates a numerical value related to an actor's performance on an activity.</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://adlnet.gov/expapi/verbs/scored">http://adlnet.gov/expapi/verbs/scored</a> </td></tr>
-<tr><th align="left">Recipe Example</th><td> <a href="recipes/assignment-graded.md#verb">Assignment Graded</a> </td></tr>
+<tr><th align="left">Recipe Example</th><td> <a href="recipes/assignment-graded.html#verb">Assignment Graded</a> </td></tr>
 </table>
 
 ### Attended
@@ -70,12 +74,12 @@ The following [xAPI verbs](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-
 <tr><th align="left">Verb</th><td>Attended</td></tr>
 <tr><th align="left">Description</th><td>Indicates the actor was present at a virtual or physical event or activity.</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://adlnet.gov/expapi/verbs/attended">http://adlnet.gov/expapi/verbs/attended</a> </td></tr>
-<tr><th align="left">Recipe Example</th><td> <a href="recipes/attended.md#verb">Attended learning activity</a> </td></tr>
+<tr><th align="left">Recipe Example</th><td> <a href="recipes/attended.html#verb">Attended learning activity</a> </td></tr>
 </table>
 
 ## 2.0 Result
 
-In the Jisc profile, the use of the [result entity](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#result) and any of its properties is optional. Such as in the [recipes/assignment-graded.md#verb](assignment graded recipe#result) recipe example.
+In the Jisc profile, the use of the [result entity](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.html#result) and any of its properties is optional. Such as in the [recipes/assignment-graded.html#verb](assignment graded recipe#result) recipe example.
 
 Example:
 
@@ -101,7 +105,7 @@ The following are extension properties in the result entity:
 <tr><th align="left">Label</th><td>Scored</td></tr>
 <tr><th align="left">Description</th><td>A non-numerical assessment result. Data type is string (256)</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/grade">http://xapi.jisc.ac.uk/grade</a> </td></tr>
-<tr><th align="left">Recipe Example</th><td> <a href="recipes/assignment-graded.md#verb">Assignment Graded</a> </td></tr>
+<tr><th align="left">Recipe Example</th><td> <a href="recipes/assignment-graded.html#verb">Assignment Graded</a> </td></tr>
 <tr><th align="left">Value Space</th><td>String</td></tr>
 <tr><th align="left">Sample Value</th><td>5 Stars</td></tr>
 </table>
@@ -111,7 +115,7 @@ The following are extension properties in the result entity:
 
 
 ### 3.1 Activity Types
-The following are types of the [Activity Definition Object](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#activity-definition). 
+The following are types of the [Activity Definition Object](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.html#activity-definition). 
 
 Example:
 ``` javascript
@@ -133,7 +137,7 @@ Example:
 <tr><th align="left">Label</th><td>Application</td></tr>
 <tr><th align="left">Description</th><td>Represents any kind of software application</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://activitystrea.ms/schema/1.0/application">http://activitystrea.ms/schema/1.0/application</a> </td></tr>
-<tr><th align="left">Recipe Example</th><td> <a href="recipes/login.md#complete_example">Logged in</a> </td></tr>
+<tr><th align="left">Recipe Example</th><td> <a href="recipes/login.html#complete_example">Logged in</a> </td></tr>
 </table>
 
 ### Assessment
@@ -142,7 +146,7 @@ Example:
 <tr><th align="left">Label</th><td>Application</td></tr>
 <tr><th align="left">Description</th><td>An assessment is an activity type that determines a learner’s mastery of a particular subject area. An assessment typically has one or more questions.</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://adlnet.gov/expapi/activities/assessment">http://adlnet.gov/expapi/activities/assessment</a> </td></tr>
-<tr><th align="left">Recipe Example</th><td> <a href="recipes/assignment-submitted.md">assignment-submitted</a> </td></tr>
+<tr><th align="left">Recipe Example</th><td> <a href="recipes/assignment-submitted.html">assignment-submitted</a> </td></tr>
 </table>
 
 
@@ -161,7 +165,7 @@ Example:
 <tr><th align="left">Label</th><td>Module</td></tr>
 <tr><th align="left">Description</th><td>A module represents any “content aggregation” at least one level below the course level. Modules of modules can exist for layering purposes. Modules are not content. Modules are one level up from all content. </td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://adlnet.gov/expapi/activities/module">http://adlnet.gov/expapi/activities/module</a> </td></tr>
-<tr><th align="left">Recipe Example</th><td> <a href="recipes/Module-View.md#object">Module-View</a> </td></tr>
+<tr><th align="left">Recipe Example</th><td> <a href="recipes/Module-View.html#object">Module-View</a> </td></tr>
 </table>
 
 ### VLE
@@ -186,7 +190,7 @@ Example:
 <tr><th align="left">Label</th><td>VLE Page</td></tr>
 <tr><th align="left">Description</th><td>Any page within a VLE that isn't designed to be learning content. e.g. navigation or administration pages   </td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/vle/page">http://xapi.jisc.ac.uk/vle/page</a> </td></tr>
-<tr><th align="left">Example in Recipe</th><td> <a href="recipes/Module-View.md#object">Module-View</a> </td></tr>
+<tr><th align="left">Example in Recipe</th><td> <a href="recipes/Module-View.html#object">Module-View</a> </td></tr>
 <tr><th align="left">UI Example</th><td> <a href="http://moodle.data.alpha.jisc.ac.uk/mod/page/view.php?id=9">A page on University of Jisc</a> </td></tr>
 </table>
 
@@ -196,7 +200,7 @@ Example:
 <tr><th align="left">Label</th><td>VLE Quiz</td></tr>
 <tr><th align="left">Description</th><td>Quiz within a VLE</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/vle/quiz">http://xapi.jisc.ac.uk/vle/quiz</a> </td></tr>
-<tr><th align="left">Example in Recipe</th><td> <a href="recipes/Module-View.md#object">Module-View</a> </td></tr>
+<tr><th align="left">Example in Recipe</th><td> <a href="recipes/Module-View.html#object">Module-View</a> </td></tr>
 <tr><th align="left">UI Example</th><td> <a href="http://moodle.data.alpha.jisc.ac.uk/mod/page/view.php?id=13">A quiz on University of Jisc</a> </td></tr>
 </table>
 
@@ -251,7 +255,7 @@ Example:
 </table>
 
 ## 3.2 Object Definition Extensions
-The following are Jisc profile extensions to be used in [object.definition.extensions](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#object). See the [Assignment Graded](recipes/assignment-graded.md#verb)
+The following are Jisc profile extensions to be used in [object.definition.extensions](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.html#object). See the [Assignment Graded](recipes/assignment-graded.html#verb)
 
 ### Due Date
 
@@ -259,7 +263,7 @@ The following are Jisc profile extensions to be used in [object.definition.exten
 <tr><th align="left">Label</th><td>Due Date</td></tr>
 <tr><th align="left">Description</th><td>Date object is due to be submitted. Format is ISO 8601 date time . </td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/dueDate">http://xapi.jisc.ac.uk/dueDate</a> </td></tr>
-<tr><th align="left">Example in Recipe</th><td> <a href="v0.3/recipes/assignment-graded.md#object">assignment-graded</a> </td></tr>
+<tr><th align="left">Example in Recipe</th><td> <a href="v0.3/recipes/assignment-graded.html#object">assignment-graded</a> </td></tr>
 <tr><th align="left">Data Type</th><td>String</td></tr>
 <tr><th align="left">Value Space</th><td>ISO 8601 date time</td></tr>
 <tr><th align="left">Sample Value</th><td>2016-02-05T17:59:45.000Z</td></tr>
@@ -271,7 +275,7 @@ The following are Jisc profile extensions to be used in [object.definition.exten
 <tr><th align="left">Label</th><td>DateTime</td></tr>
 <tr><th align="left">Description</th><td>Value representing a calendar date and time, such as 2013-08-27 09:26:45.001. Value should be a string formatted as an ISO8601 date and time to match the rest of the specification values.</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://id.tincanapi.com/extension/datetime">http://id.tincanapi.com/extension/datetime</a> </td></tr>
-<tr><th align="left">Example in Recipe</th><td> <a href="recipes/attendance.md#object">attendance</a> </td></tr>
+<tr><th align="left">Example in Recipe</th><td> <a href="recipes/attendance.html#object">attendance</a> </td></tr>
 <tr><th align="left">Data Type</th><td>String</td></tr>
 <tr><th align="left">Value Space</th><td>ISO 8601 date time</td></tr>
 <tr><th align="left">Sample Value</th><td>2016-02-05T17:59:45.000Z</td></tr>
@@ -283,7 +287,7 @@ The following are Jisc profile extensions to be used in [object.definition.exten
 <tr><th align="left">Label</th><td>Duration</td></tr>
 <tr><th align="left">Description</th><td>Value representing a length of time, for example the length of a video. Value should be formatted as an ISO8601 duration to match the Result.duration property. Note that ISO8601 duration allows representations to extend beyond their carry over points. e.g. one and a half hours can be represented as either PT1H30M0S or PT90M. This extension will generally be used within an Activity Definition to indicate a length of an Activity as compared to the Result.duration which captures the length of time for a specific event. For example a video may be 5 minutes long (this Extension), but an actor may have only watched 30 seconds of it (the Result.duration). </td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://id.tincanapi.com/extension/duration">http://id.tincanapi.com/extension/duration</a> </td></tr>
-<tr><th align="left">Example in Recipe</th><td> <a href="recipes/attendance.md#object">attendance</a> </td></tr>
+<tr><th align="left">Example in Recipe</th><td> <a href="recipes/attendance.html#object">attendance</a> </td></tr>
 <tr><th align="left">Data Type</th><td>String</td></tr>
 <tr><th align="left">Value Space</th><td>ISO 8601 duration</td></tr>
 <tr><th align="left">Sample Value</th><td>PT1H30M0S</td></tr>
@@ -297,7 +301,7 @@ Was used in older recipes to identify the genre of software application. Best pr
 <tr><th align="left">Label</th><td>Application Type </td></tr>
 <tr><th align="left">Description</th><td>Identifies the genre of software application </td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/applicationType">http://xapi.jisc.ac.uk/applicationType</a> </td></tr>
-<tr><th align="left">Example in Recipe</th><td> <a href="recipes/login.md#object">Logged in</a> </td></tr>
+<tr><th align="left">Example in Recipe</th><td> <a href="recipes/login.html#object">Logged in</a> </td></tr>
 <tr><th align="left">Data Type</th><td>IRI</td></tr>
 <tr><th align="left">Sample Value</th><td>http://id.tincanapi.com/activitytype/lms</td></tr>
 </table>
@@ -308,7 +312,7 @@ Was used in older recipes to identify the genre of software application. Best pr
 <tr><th align="left">Label</th><td>Sub Type </td></tr>
 <tr><th align="left">Description</th><td>Identifies the sub genre of any application </td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/subType">http://xapi.jisc.ac.uk/subType</a> </td></tr>
-<tr><th align="left">Example in Recipe</th><td> <a href="recipes/login.md#object">Logged in</a> </td></tr>
+<tr><th align="left">Example in Recipe</th><td> <a href="recipes/login.html#object">Logged in</a> </td></tr>
 <tr><th align="left">Data Type</th><td>IRI or String</td></tr>
 <tr><th align="left">Sample Value</th><td>http://id.tincanapi.com/activitytype/lms</td></tr>
 </table>
@@ -317,7 +321,7 @@ Was used in older recipes to identify the genre of software application. Best pr
 
 <table>
 <tr><th align="left">Label</th><td>UDD Module Instance ID</td></tr>
-<tr><th align="left">Description</th><td>An identifier for a module instance<br/>The value should correspond to the [UDD module_instance.MOD_INSTANCE_ID](https://github.com/jiscdev/analytics-udd/blob/master/udd/module_instance.md#mod_instance_id) identifier that identifies the relevant module in UDD compliant data.</td></tr>
+<tr><th align="left">Description</th><td>An identifier for a module instance<br/>The value should correspond to the [UDD module_instance.MOD_INSTANCE_ID](https://github.com/jiscdev/analytics-udd/blob/master/udd/module_instance.html#mod_instance_id) identifier that identifies the relevant module in UDD compliant data.</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/uddModInstanceID">http://xapi.jisc.ac.uk/uddModInstanceID</a> </td></tr>
 </table>
 
@@ -326,7 +330,7 @@ Was used in older recipes to identify the genre of software application. Best pr
 
 
 ## 4.1 Context Extensions
-The following are properties of the [Context extensions property](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#246-context).
+The following are properties of the [Context extensions property](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.html#246-context).
 
 ### Umbrella course area
 
@@ -389,7 +393,7 @@ http://xapi.jisc.ac.uk/extensions/vle_mod_id is a courseArea identifier. It is u
 
 <table>
 <tr><th align="left">Label</th><td>VLE Module ID</td></tr>
-<tr><th align="left">Description</th><td><a href="https://github.com/jiscdev/analytics-udd/blob/master/udd/module_vle_map.md">Entity that connects a course area in a VLE with a module</a></td></tr>
+<tr><th align="left">Description</th><td><a href="https://github.com/jiscdev/analytics-udd/blob/master/udd/module_vle_map.html">Entity that connects a course area in a VLE with a module</a></td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/vle_mod_id">http://xapi.jisc.ac.uk/vle_mod_id</a> </td></tr>
 </table>
 

@@ -1,3 +1,6 @@
+---
+layout: home
+---
 # Version changes to vocabulary
 
 Tracking identifier mappings between changes

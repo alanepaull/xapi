@@ -1,3 +1,7 @@
+---
+layout: home
+---
+
 #session_timed_out recipe
 Revision: 1.3
 
@@ -7,7 +11,7 @@ This activity indicates the activity provider has determined that the session wa
 This recipe may not work reliably across VLEs.
 ## Definition
 ### Actor
-Common entity identifier:  ActorA, as defined on the [common structures](../common_structures.md#actora) page.
+Common entity identifier:  ActorA, as defined on the [common structures](../common_structures.html#actora) page.
 
 Example:
 ``` Javascript
@@ -23,9 +27,9 @@ Example:
 ```
 
 ### Verb
-Common entity identifier: VerbA, as defined on the [common structures](../common_structures.md#verba) page.
+Common entity identifier: VerbA, as defined on the [common structures](../common_structures.html#verba) page.
 
-The Verb,[abandoned](/vocabulary.md#verbs) describes the action of logging out of a platform.
+The Verb,[abandoned](/vocabulary.html#verbs) describes the action of logging out of a platform.
 
 Example:
 
@@ -39,7 +43,7 @@ Example:
 ``` 
 
 ### Context
-Common entity identifier: ContextA, as defined on the [common structures](../common_structures.md#contexta) page. Only the core attributes of context are applicable.
+Common entity identifier: ContextA, as defined on the [common structures](../common_structures.html#contexta) page. Only the core attributes of context are applicable.
 
 Example:
 
@@ -55,11 +59,11 @@ Example:
 ```
 
 ### Object
-Common entity identifier: ObjectA, as defined on the [common structures](../common_structures.md#objecta) page.
+Common entity identifier: ObjectA, as defined on the [common structures](../common_structures.html#objecta) page.
 
-The object defines the item that the user has timed out of.  A [Jisc specific extension](common_statements.md#jisc_extensions) details that it is a VLE that is being logged out of. 
+The object defines the item that the user has timed out of.  A [Jisc specific extension](common_statements.html#jisc_extensions) details that it is a VLE that is being logged out of. 
 
-The object.definition.type is "http://activitystrea.ms/schema/1.0/application". The subType (http://xapi.jisc.ac.uk/subType) extension should be used to identify the system type that is being logged into, in this example a Virtual Learning Environment (aka Learning Management System), identified by  http://id.tincanapi.com/activitytype/lms. Different application types should use the relevant subType, as defined on the [vocabularies](vocabulary.md#32-object-definition-extensions) page.
+The object.definition.type is "http://activitystrea.ms/schema/1.0/application". The subType (http://xapi.jisc.ac.uk/subType) extension should be used to identify the system type that is being logged into, in this example a Virtual Learning Environment (aka Learning Management System), identified by  http://id.tincanapi.com/activitytype/lms. Different application types should use the relevant subType, as defined on the [vocabularies](vocabulary.html#32-object-definition-extensions) page.
 
 ``` javascript
 

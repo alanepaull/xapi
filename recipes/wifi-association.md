@@ -1,3 +1,7 @@
+---
+layout: home
+---
+
 # wifi_access_recipe
 Revision: 0.2
 
@@ -7,7 +11,7 @@ This activity records a users device accessing wifi via an access point.
 ## Definition
 
 ### Actor
-Common entity identifier:  ActorA, as defined on the [common structures](../common_structures.md#actora) page.
+Common entity identifier:  ActorA, as defined on the [common structures](../common_structures.html#actora) page.
 The actor entity describes the individual accessing wifi.
 
 
@@ -23,7 +27,7 @@ The actor entity describes the individual accessing wifi.
 ```
 
 ### Verb
-Common entity identifier: VerbA, as defined on the [common structures](../common_structures.md#verba) page.
+Common entity identifier: VerbA, as defined on the [common structures](../common_structures.html#verba) page.
 
 The Verb, accessed, describes the action of associating a device to a wifi access point.
 

@@ -5,7 +5,7 @@ Revision: 1.2
 This activity records a user logging out of a VLE.
 ## Definition
 ### Actor
-Common entity identifier:  ActorA, as defined on the [common structures](../common_structures.md#actora) page.
+Common entity identifier:  ActorA, as defined on the [common structures](../common_structures.html#actora) page.
 
 The actor entity describes the individual logging out of the system.
 
@@ -26,9 +26,9 @@ The actor entity describes the individual logging out of the system.
 ### Verb
 Common entity identifier: VerbA
 
-Common entity identifier: VerbA, as defined on the [common structures](../common_structures.md#verba) page.
+Common entity identifier: VerbA, as defined on the [common structures](../common_structures.html#verba) page.
 
-This recipe uses the [logged out](/vocabulary.md#verbs) describes the action of logging out of a platform.
+This recipe uses the [logged out](/vocabulary.html#verbs) describes the action of logging out of a platform.
 
 Example:
 
@@ -41,7 +41,7 @@ Example:
     },
 ``` 
 ### Context
-Common entity identifier: ContextA, as defined on the [common structures](../common_structures.md#contexta) page.
+Common entity identifier: ContextA, as defined on the [common structures](../common_structures.html#contexta) page.
 
 Since the logged-in action is not undertaken in the context of a learning activity or course, only the core attributes of context are applicable.
 
@@ -58,9 +58,9 @@ Since the logged-in action is not undertaken in the context of a learning activi
 ```
 
 ### Object
-Common entity identifier: ObjectA, as defined on the [common structures](../common_structures.md#objecta) page.
+Common entity identifier: ObjectA, as defined on the [common structures](../common_structures.html#objecta) page.
 
-For the logged-out recipe, the object.definition.type is "http://activitystrea.ms/schema/1.0/application". The subType (http://xapi.jisc.ac.uk/subType) extension should be used to identify the system type that is being logged into, in this example a Virtual Learning Environment (aka Learning Management System), identified by  http://id.tincanapi.com/activitytype/lms. Different application types should use the relevant subType, as defined on the [vocabularies](vocabulary.md#32-object-definition-extensions) page. The object.definition.name and object.definition.definition describe the resource logged out of. 
+For the logged-out recipe, the object.definition.type is "http://activitystrea.ms/schema/1.0/application". The subType (http://xapi.jisc.ac.uk/subType) extension should be used to identify the system type that is being logged into, in this example a Virtual Learning Environment (aka Learning Management System), identified by  http://id.tincanapi.com/activitytype/lms. Different application types should use the relevant subType, as defined on the [vocabularies](vocabulary.html#32-object-definition-extensions) page. The object.definition.name and object.definition.definition describe the resource logged out of. 
 
 
 ### Example

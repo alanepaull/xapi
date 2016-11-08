@@ -1,3 +1,7 @@
+---
+layout: home
+---
+
 #vle_resource_viewed recipe
 Revision: 1.3
 
@@ -5,7 +9,7 @@ Revision: 1.3
 This recipe defines the structure and terms to record the experience of viewing a vle resource such as a Moodle Module or Blackboard building block (eg a page as identified by its url)
 
 ### Actor
-Common entity identifier:  ActorA, as defined on the [common structures](../common_structures.md#actora) page.
+Common entity identifier:  ActorA, as defined on the [common structures](../common_structures.html#actora) page.
 
 The actor entity describes the individual that is viewing a vle resource.
 
@@ -25,9 +29,9 @@ The actor entity describes the individual that is viewing a vle resource.
 ```
 
 ### Verb
-Common entity identifier: VerbA, as defined on the [common structures](../common_structures.md#verba) page.
+Common entity identifier: VerbA, as defined on the [common structures](../common_structures.html#verba) page.
 
-The Verb,[viewed](/vocabulary.md#verbs) denotes the action of the user's browser or app requesting the resource that the user wishes to view.
+The Verb,[viewed](/vocabulary.html#verbs) denotes the action of the user's browser or app requesting the resource that the user wishes to view.
 
 ### Example:
 
@@ -40,9 +44,9 @@ The Verb,[viewed](/vocabulary.md#verbs) denotes the action of the user's browser
     },
 ```
 ### Context
-Common entity identifier: ContextA, as defined on the [common structures](../common_structures.md#contextc) page.
+Common entity identifier: ContextA, as defined on the [common structures](../common_structures.html#contextc) page.
 
-For this recipe the courseArea is required. See the [vocabularies](../vocabulary.md#42-coursearea-properties) page for more information
+For this recipe the courseArea is required. See the [vocabularies](../vocabulary.html#42-coursearea-properties) page for more information
 
 ### Example:
 
@@ -67,9 +71,9 @@ For this recipe the courseArea is required. See the [vocabularies](../vocabulary
 
 ### Object
 
-Common entity identifier: ObjectA, as defined on the [common structures](../common_structures.md#objecta) page.
+Common entity identifier: ObjectA, as defined on the [common structures](../common_structures.html#objecta) page.
 
-For this recipe the object needs to identify what was viewed. A list of valid values  for the object definition type can be found at (../vocabulary.md#Object.definition.extension)
+For this recipe the object needs to identify what was viewed. A list of valid values  for the object definition type can be found at (../vocabulary.html#Object.definition.extension)
 
 ### Example
 

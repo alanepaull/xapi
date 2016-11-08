@@ -1,3 +1,7 @@
+---
+layout: home
+---
+
 #Attended learning activity
 Revision: 0.2
 
@@ -7,7 +11,7 @@ DRAFT
 This recipe defines the structure and terms to record a learner's attendance of an event such as a lecture or other learning activity. The expectation is that the source data will be collected by a system designed to explicitly record attendance via some action of the learner, such as swiping a card.
 
 ### Actor
-Common entity identifier: [ActorA](../common_structures.md#actora)
+Common entity identifier: [ActorA](../common_structures.html#actora)
 
 #### Entity Example:
 The actor entity describes the individual who has attended the learning activity.
@@ -27,11 +31,11 @@ The actor entity describes the individual who has attended the learning activity
 
 ### Verb
 
-Common entity identifier: [VerbA](../common_structures.md#verba)
+Common entity identifier: [VerbA](../common_structures.html#verba)
 
 #### Entity Example:
 
-The verb [attended](/vocabulary.md#verbs) denotes the action of the user's browser or app requesting the resource that the user wishes to view.
+The verb [attended](/vocabulary.html#verbs) denotes the action of the user's browser or app requesting the resource that the user wishes to view.
 
 ``` javascript
 "verb": {
@@ -43,7 +47,7 @@ The verb [attended](/vocabulary.md#verbs) denotes the action of the user's brows
 ```
 
 ### Result
-Common entity identifier: [ResultA](../common_structures.md#resulta)
+Common entity identifier: [ResultA](../common_structures.html#resulta)
 
 #### Entity Example:
 When set to "true", result.completion indicates that the learner attended the event. "false"indicates that the learner did not attend the event.
@@ -55,10 +59,10 @@ When set to "true", result.completion indicates that the learner attended the ev
 ```
 
 ### Object
-Common entity identifier: [ObjectC](../common_structures.md#objectc)
+Common entity identifier: [ObjectC](../common_structures.html#objectc)
 
 #### Entity Example:
-The object defines the activity that has been completed. Examples of valid object.definition Activity object Types can be found in [the vocabulary](../vocabulary.md#30-object).
+The object defines the activity that has been completed. Examples of valid object.definition Activity object Types can be found in [the vocabulary](../vocabulary.html#30-object).
 
 ``` javascript
 
