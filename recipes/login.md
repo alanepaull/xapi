@@ -1,3 +1,7 @@
+---
+layout: home
+---
+
 #vle_logged_in Recipe
 Revision: 1.3
 
