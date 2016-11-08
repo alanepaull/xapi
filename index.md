@@ -2,9 +2,9 @@
 layout: home
 ---
 
-#xAPI recipes for the Jisc Learning Analytics Project v0.5
+# xAPI recipes for the Jisc Learning Analytics Project v0.5
 
-##Repository Workflow
+## Repository Workflow
 The simplest way of contributing xAPI recipes works as follows:
 
 1. add an issue to the issue tracker to alert everyone to what you are working on and why
@@ -28,12 +28,12 @@ As far as possible all entities are the same across recipes and are identified b
 ## VLE examples
 These are the currently platform independent documented recipes:
 
-* [Logged in] (recipes/login.html)
-* [Logged out] (recipes/logout.html)
-* [VLE resource viewed] (recipes/Module-View.html)
-* [Session timeout] (recipes/Session-timeout.html)
-* [Assignment Graded] (recipes/assignment-graded.html)
-* [Assignment Submitted] (recipes/assignment-submitted.html)
+* [Logged in](recipes/login.html)
+* [Logged out](recipes/logout.html)
+* [VLE resource viewed](recipes/Module-View.html)
+* [Session timeout](recipes/Session-timeout.html)
+* [Assignment Graded](recipes/assignment-graded.html)
+* [Assignment Submitted](recipes/assignment-submitted.html)
 * [Attended learning activity](recipes/attendance.html)
 
 ### Specific VLE examples
