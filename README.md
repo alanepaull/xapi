@@ -52,5 +52,11 @@ Statements related to the Student Goal app
 * [Alerting JSON] (/lap/apereo/model_output.js)
 * [Alerting] (/lap/apereo/model_output.md)
 
+## Intervention
+Interventions are statements in which we can query student activities that have been undertaken as part of a intervention.
 
+<table>
+<tr><td>Statement Template </td><td>JSON Example</td></tr>
+<tr><td> <a href = "/recipes/intervention/interviewed.md">Interviewed </a></td><td><a href = "/intervention/recipes/interviewed.md#example">Interviewed</a><br/></td></tr>    
+</table>
 
