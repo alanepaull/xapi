@@ -52,5 +52,13 @@ Statements related to the Student Goal app
 * [Alerting JSON] (/lap/apereo/model_output.js)
 * [Alerting] (/lap/apereo/model_output.md)
 
-
-
+### Library
+<table>
+<tr><td>Statement Template </td>   <td>JSON example</td> </tr>
+<tr><td> <a href = "/recipes/library/pclogin.md">PC Logged On</a></td><td>   </td> </tr>                                                           
+<tr><td> <a href = "/recipes/library/reading-list-view.md">Viewed Reading List</a></td><td>   </td> </tr>                                                           
+<tr><td> <a href = "/recipes/library/reading-list-item-view.md">Viewed Reading List item</a></td><td>   </td> </tr>                                                           
+<tr><td> <a href = "/recipes/library/authorise-person.md">A person authorises a request</a></td><td>   </td> </tr>                                                           
+<tr><td> <a href = "/recipes/library/authorise-service.md">A service authorises a person to access an application.</a></td><td>   </td> </tr>                                                           
+<tr><td> <a href = "/recipes/library/visited-library.md">Visited Library</a></td><td>   </td> </tr>                                                           
+</table>
