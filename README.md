@@ -34,6 +34,7 @@ These are the currently platform independent documented statements related to vi
 <tr><td><a href =  "/recipes/vle/assignment-graded.md">Assignment Graded   </a></td><td> <a href = "vle/moodle/asssignment_graded.json">Assignment graded in Moodle</a><br/> <a href="vle/blackboard/asssignment_graded.json">Assignment graded in Blackboard </a>   </td></tr>    
 <tr><td><a href =  "/recipes/vle/assignment-submitted.md">Assignment Submitted  </a></td><td><a href = "vle/moodle/assignment_submitted.json">Assignment submitted in Moodle</a><br/> <a href="vle/blackboard/assignment_submitted.json">Assignment submitted in Blackboard</a>   </td></tr>    
 <tr><td><a href =  "/recipes/vle/forum-contribution.md">Forum Contribution</a></td><td>Draft</td></tr>    
+<tr><td><a href =  "/recipes/vle/gradebook-view.md">Student views gradebook</a></td><td>Draft</td></tr>   
 
 </table>
 
@@ -47,7 +48,7 @@ Statements related to the Student Goal app
 ## Presence and Attendance
 <table>
 <tr><td>Statement Template </td><td>JSON Example</td></tr>
-<tr><td> <a href = "recipes/attendancne/attendance.md">Attended learning activity </a></td><td><a href = "recipes/attendance.md#example">Attended learning activity </a></td> </tr>    
+<tr><td> <a href = "recipes/attendencne/attendance.md">Attendesd learning activity </a></td><td><a href = "recipes/attendance.md#example">Attended learning activity </a></td> </tr>    
 </table>
 
 ## Predictive Model Output

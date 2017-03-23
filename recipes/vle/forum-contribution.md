@@ -2,7 +2,7 @@
 Revision: 0.1
 
 ##Purpose
-This template defines the structure and terms to record the experience of viewing a vle resource such as a Moodle Module or Blackboard building block (eg a page as identified by its url)
+This template defines the structure and terms to record the experience of contributing to a forum.
 
 ### Actor
 Common entity identifier:  ActorA, as defined on the [common structures](/common_structures.md#actora) page.
@@ -30,14 +30,7 @@ Common entity identifier: VerbA, as defined on the [common structures](/common_s
 
 ### Example:
 
-``` javascript
-"verb": {
-        "id": "http://id.tincanapi.com/verb/viewed",
-        "display": {
-            "en": "viewed"
-        }
-    },
-```
+
 ### Context
 Common entity identifier: ContextA, as defined on the [common structures](/common_structures.md#contextc) page.
 
