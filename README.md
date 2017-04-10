@@ -35,6 +35,8 @@ These are the currently platform independent documented statements related to vi
 <tr><td><a href =  "/recipes/vle/assignment-submitted.md">Assignment Submitted  </a></td><td><a href = "vle/moodle/assignment_submitted.json">Assignment submitted in Moodle</a><br/> <a href="vle/blackboard/assignment_submitted.json">Assignment submitted in Blackboard</a>   </td></tr>    
 <tr><td><a href =  "/recipes/vle/forum-contribution.md">Forum Contribution</a></td><td>Draft</td></tr>    
 <tr><td><a href =  "/recipes/vle/gradebook-view.md">Student views gradebook</a></td><td>Draft</td></tr>   
+<tr><td><a href =  "/recipes/vle/video-view.md">Viewing Online Material</a></td><td>Draft</td></tr> 
+
 
 </table>
 
