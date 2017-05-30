@@ -321,6 +321,15 @@ Example:
 <tr><th align="left">Allowed Subtypes</th><td>  </td></tr>
 </table>
 
+### Question
+
+<table>
+<tr><th align="left">Label</th><td>Question</td></tr>
+<tr><th align="left">Description</th><td>A question is typically part of an assessment and requires a response from the learner, a response that is then evaluated for correctness.</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://adlnet.gov/expapi/activities/question">http://adlnet.gov/expapi/activities/question</a> </td></tr>
+<tr><th align="left">Allowed Subtypes</th><td>  </td></tr>
+</table>
+
 <a name="subtypes"></a>
 ### 3.2 Sub-Types
 
