@@ -71,11 +71,10 @@ These will be split into seperate recipe statement templates
 
 ### Library
 <table>
-<tr><td>Statement Template </td>   <td>JSON example</td> </tr>
-<tr><td> <a href = "/recipes/library/pclogin.md">PC Logged On</a></td><td>   </td> </tr>                                                           
+<tr><td>Statement Template </td>   <td>JSON example</td> </tr>                                                         
 <tr><td> <a href = "/recipes/library/reading-list-view.md">Viewed Reading List</a></td><td>   </td> </tr>                                                           
-<tr><td> <a href = "/recipes/library/reading-list-item-view.md">Viewed Reading List item</a></td><td>   </td> </tr>                                                           
-<tr><td> <a href = "/recipes/library/authorise-person.md">A person authorises a request</a></td><td>   </td> </tr>                                                           
-<tr><td> <a href = "/recipes/library/authorise-service.md">A service authorises a person to access an application.</a></td><td>   </td> </tr>                                                           
-<tr><td> <a href = "/recipes/library/visited-library.md">Visited Library</a></td><td>   </td> </tr>                                                           
+<tr><td> <a href = "/recipes/library/reading-list-item-view.md">Viewed Reading List item</a></td><td>   </td> </tr>        
+<tr><td> <a href = "/lbrary/econtent.md">Accessing econtent</a></td><td></td></tr>        
+<tr><td> <a href = "/lbrary/borrowing.md">Borrowed item</a></td><td></td> </tr>        
+<tr><td> <a href = "/lbrary/login.md">Login to system</a></td><td>  </td> </tr>        
 </table>
