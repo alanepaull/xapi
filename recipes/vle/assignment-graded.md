@@ -1,5 +1,6 @@
-#vle_assignment_graded statement template
-Revision: 1.3
+# vle_assignment_graded statement template
+
+[Statement Template Changes](/version_changes.md#assignment-graded)
 
 ## Purpose
 This activity records a graded assignment
@@ -75,10 +76,6 @@ The object defines the activity that has been evaluated. [Examples of valid obje
 			"name":{
 				"en":"Course Assignment"
 			},
-			"description":{
-				"en":"Course Assignment description"
-				}
-			},
 			"extensions":{
 				"http://xapi.jisc.ac.uk/dueDate": "2016-02-05T17:59:45.000Z"
 			}
@@ -107,9 +104,9 @@ The context.contextActivities is property with a ‘grouping’ that allows stat
                         "name":{
                             "en":"xAPI Basics"
                         },
-                        "description":{
-                            "en":"xAPI Basics course for Learning Analytics enthusiasts"
-                        }
+                    "extensions": {
+     		   	 "http://xapi.jisc.ac.uk/subType": "http://id.tincanapi.com/activitytype/lms"
+			}
                     }
                 }
             ]
@@ -126,13 +123,13 @@ The context.contextActivities is property with a ‘grouping’ that allows stat
         "platform": "Moodle"
         "extensions":  {
       		"http://xapi.jisc.ac.uk/courseArea": {
-      		 	 "http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
-        		 "id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
-              },
-			  
- 			"http://xapi.jisc.ac.uk/sessionId": "32456891" ,
+				"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
+				"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
+				"id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
+              		},
+			"http://xapi.jisc.ac.uk/sessionId": "32456891" ,
         	"http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
-			"http://xapi.jisc.ac.uk/recipeVersion" : "vle_assignment_gradedV1.2"
+			"http://xapi.jisc.ac.uk/version" : "1.0"
         }
 ```
 

@@ -1,25 +1,9 @@
-#Attended learning statement template
-Revision: 0.2
+# Attended_Learning_Event statement template
 
-DRAFT
+[Statement Template Changes](/version_changes.md#attendance)
 
-##Purpose
-This statement defines the structure and terms to record a learner's attendance of an event such as a lecture or other learning activity. The expectation is that the source data will be collected by a system designed to explicitly record attendance via some action of the learner, such as swiping a card.
-
-In this statement:
-
-- Agent and verb
-
-Student with identifier STUDENT_ID (and name NAME) attended a learning activity.
-
-- Object
-
-It was an event activity with id of ACTIVITY_EVENT_ID, of type ACTIVIITY_TYPE.
-
-- Context
-
-Event was a part of module instance MOD_INSTANCE_ID. The activity type has an id of Activity_Type_ID. The maximum number of people who could have attended the event was ACTIVITY_MAX_COUNT. The time it started was ACTIVITY_LOGGED_START and ended at ACTIVITY_LOGGED_END. The activity was led by instructor with identifer STAFF_ID.
-			
+## Purpose
+This statement defines the structure and terms to record a learner's attendance of an event such as a lecture or other learning activity. The expectation is that the source data will be collected by a system designed to explicitly record attendance via some action of the learner, such as swiping a card, or of the teacher, such as completing an electronic register.
 			
 
 ### Actor
@@ -27,11 +11,10 @@ Event was a part of module instance MOD_INSTANCE_ID. The activity type has an id
 Common entity identifier: [ActorA](/common_structures.md#actora)
 
 #### Entity Example:
-The actor entity describes the individual who has attended the learning activity.
+The actor entity describes the individual who has attended the event.
 
 ``` Javascript
 {
-    "version": "1.0.0",
     "actor": {
         "objectType": "Agent",
         "name": "John Smith",
@@ -48,7 +31,7 @@ Common entity identifier: [VerbA](/common_structures.md#verba)
 
 #### Entity Example:
 
-The verb [attended](/vocabulary.md#verbs) denotes the action of the user's browser or app requesting the resource that the user wishes to view.
+The verb [attended](/vocabulary.md#attended) denotes the action of the user's browser or app requesting the resource that the user wishes to view.
 
 ``` javascript
 "verb": {
@@ -63,7 +46,7 @@ The verb [attended](/vocabulary.md#verbs) denotes the action of the user's brows
 Common entity identifier: [ResultC](/common_structures.md#resultc)
 
 #### Entity Example:
-The result.completion must be set true or false, indicating if the actor attended the activity. The extension activity_late can be set to 1 if the actor did not attend the event on time.
+The result.completion must be set true or false, indicating if the actor attended the event. The extension [attendance_late](/vocabulary.md#attendance-late) can be set to 1 if the actor did not attend the event on time. [Attendance_category](/vocabulary.md#attendance-category) can be used to express additional detail, for example whether lateness was extreme or condoned, or to provide the source system attendance type code (as might be recorded in a conventional paper register). 
 
 
 ``` javascript
@@ -71,104 +54,80 @@ The result.completion must be set true or false, indicating if the actor attende
         "completion":true,
 		
 	 "extensions":{
-		  "http://xapi.jisc.ac.uk/activity_late":"1",
+		  "http://xapi.jisc.ac.uk/attendance_late":1,
+		  "http://xapi.jisc.ac.uk/attendance_category":"1",
 		 }
     }
 ```
 
 ### Object
-Common entity identifier: [ObjectC](/common_structures.md#objectc)
+Common entity identifier: [ObjectD](/common_structures.md#objectd)
 
 #### Entity Example:
-The object defines the activity that has been completed. Examples of valid object.definition Activity object Types can be found in [the vocabulary](../vocabulary.md#30-object).
+The object defines a timetabled event that has been completed. Information on the timetabled event can be found in the object.extensions. See the [objectD section in the common structures document](/common_structures.md#objectd).
 
 ``` javascript
 
-"object":{
-		"objectType":"Activity",
-		"id":"L1001",
-		"definition":{
-			"type":"http://xapi.jisc.ac.uk/lecture",
-			"name":{
-				"en":"Lecture"
-			},
-			"description":{
-				"en":"The first lecture of 101"
-				}
-			},
-			
-			
-		}
+ "object": {
+        "objectType": "Activity",
+        "id": "http://wicketkeeper.poppleton.ac.uk/modules/2016/sem1/psy101/qlecture1",
+        "definition": {
+            "type": "http://xapi.jisc.ac.uk/lecture",
+            "name": {
+                "en": "Psychology 101 Introduction"
+            },
+            "description": {
+                "en": "The first tutorial of psychology 101"
+            },
+	    "extensions": {
+            	"http://xapi.jisc.ac.uk/subType": "http://xapi.jisc.ac.uk/workshop"
+	    	"http://xapi.jisc.ac.uk/starttime": "2016-02-05T10:00:00.000Z",
+          	"http://xapi.jisc.ac.uk/endtime": "2016-02-05T14:00:00.000Z",
+            	"http://xapi.jisc.ac.uk/event_type_id": "1",
+	    	"http://xapi.jisc.ac.uk/event_type_description": "Lecture", 
+            	"http://xapi.jisc.ac.uk/event_max_count": 32,
+            	"http://xapi.jisc.ac.uk/event_mandatory": 1,
+       	 }
+    },
 		
 ```
 
 ### Context
-Common entity identifier: ContextD
+Common entity identifier: Common entity identifier: [ContextD](/common_structures.md#contextd)
 
-ContextD is a new entity, while in draft information on the properties is avalible here:
-<table>
-	<tr><th>Property [cardinality]</th><th>Description</th></tr>
-	<tr>
-	<td>
-		context.extensions.http://xapi.jisc.ac.uk/uddModInstanceID<br/>	
-	    context.extensions.http://xapi.jisc.ac.uk/activity_type_id<br/>		
-		context.extensions.http://xapi.jisc.ac.uk/activity_max_count<br/>
-		context.extensions.http://xapi.jisc.ac.uk/activity_mandatory<br/>
-		context.extensions.http://xapi.jisc.ac.uk/recipeVersion<br/>
-		context.extensions.http://xapi.jisc.ac.uk/starttime<br/>
-		context.extensions.http://xapi.jisc.ac.uk/endtime<br/>
-		context.extensions.http://xapi.jisc.ac.uk/courseArea<br/>
-	</td>
-	<td>
-	
-	The <b>uddModInstanceID</b> extension records the module instance with which the learning activity is associated. See the <a href="vocabulary.md#31-activity-types">vocabulary page</a> for more details.
-	The <b>recipeVersion</b> extension is recommended, and identifies the statement (and its version) which was followed to create the xAPI statement. <br/>
-	The <b>courseArea</b> identifies Umbrella course/parent area by its home page URI. More information can be found on the <a href="vocabulary.md#umbrella-course-area">vocabularies page</a>.
-	The <b>starttime</b> and <b>endtime</b> uses datetimes for planned start and end of event.
-	<b> activity_max_count</b>is the maximum number of people that could have attended the event
-	<b> activity_max_mandatory</b> states if the event was optional or not
-	</td>
-	</tr>
-	<tr>
-	<td>
-			context.instructor [0..1] <br />
-			context.instructor.objectType [1] <br />
-		    context.instructor.account.name [1] <br />
-		    context.instructor.account.homepage [1]
-</td>
-		<td>A JSON Object. <b>object.instructor.objectType</b>  has "Agent" as a value. <br /> <b>account.name</b> gives the login id for the instructor. <br /> <b>account.homepage</b> gives the URL of the home page of the application for which the login id applies.</td>
-	</tr>
-
-	
-</table>
 
 #### Entity Example:
 
 
-
-
 ``` javascript
  "context": {
-        "extensions": {
-            "http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
-            "http://xapi.jisc.ac.uk/activity_type_id": "1",
-            "http://xapi.jisc.ac.uk/activity_max_count": "32",
-            "http://xapi.jisc.ac.uk/activity_mandatory": "1",
-            "http://xapi.jisc.ac.uk/recipeVersion": "attendanceV0.1",
-            "http://xapi.jisc.ac.uk/starttime": "2016-02-05T10:00:00.000Z",
-            "http://xapi.jisc.ac.uk/endtime": "2016-02-05T14:00:00.000Z",
-            "http://xapi.jisc.ac.uk/courseArea": {
-                "http://xapi.jisc.ac.uk/vle_mod_id": "LA101-200-2016S1-0",
-                "id": "http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
-            }
-        },
-        "instructor": {
+     "instructor": {
             "objectType": "Agent",
             "account": {
                 "name": "2",
                 "homePage": "http://localhost/moodle"
             }
-        }
+		},
+		
+	 "extensions": {
+        "http://xapi.jisc.ac.uk/version": "1.0",
+			"http://xapi.jisc.ac.uk/deviceLocation": {
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [51.510531, -0.118930]
+					},
+				"properties": {
+				"name": "University of Jisc"
+				}
+			},	
+			
+		"http://xapi.jisc.ac.uk/courseArea": {
+                	"http://xapi.jisc.ac.uk/vle_mod_id": "LA101-200-2016S1-0",
+			"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
+               		 "id": "http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
+            		}	
+		}
     }
 ```
 
@@ -194,33 +153,40 @@ ContextD is a new entity, while in draft information on the properties is avalib
     "result": {
         "completion": true,
         "extensions": {
-            "http://xapi.jisc.ac.uk/activity_late": "1"
+            "http://xapi.jisc.ac.uk/event_late": "1"
         }
     },
-    "object": {
+	
+ "object": {
         "objectType": "Activity",
         "id": "http://wicketkeeper.poppleton.ac.uk/modules/2016/sem1/psy101/qlecture1",
         "definition": {
-            "type": "http://activitystrea.ms/schema/1.0/event",
+            "type": "http://xapi.jisc.ac.uk/lecture",
             "name": {
-                "en": "Lecture"
+                "en": "Psychology 101 Introduction"
             },
             "description": {
-                "en": "The first lecture of psychology 101"
+                "en": "The first tutorial of psychology 101"
             }
+		"extensions": {
+            		"http://xapi.jisc.ac.uk/subType": "http://xapi.jisc.ac.uk/workshop"
+			"http://xapi.jisc.ac.uk/starttime": "2016-02-05T10:00:00.000Z",
+            		"http://xapi.jisc.ac.uk/endtime": "2016-02-05T14:00:00.000Z",
+            		"http://xapi.jisc.ac.uk/event_type_id": "1",
+	    		"http://xapi.jisc.ac.uk/event_timetabled": "1",
+			"http://xapi.jisc.ac.uk/event_type_description": "Lecture", 
+            		"http://xapi.jisc.ac.uk/event_max_count": "32",
+            		"http://xapi.jisc.ac.uk/event_mandatory": "1"
+			
+            
         }
     },
+		
     "context": {
         "extensions": {
-            "http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
-            "http://xapi.jisc.ac.uk/activity_type_id": "1",
-            "http://xapi.jisc.ac.uk/activity_max_count": "32",
-            "http://xapi.jisc.ac.uk/activity_mandatory": "1",
-            "http://xapi.jisc.ac.uk/recipeVersion": "attendanceV0.1",
-			"http://xapi.jisc.ac.uk/starttime": "2016-02-05T10:00:00.000Z",
-            "http://xapi.jisc.ac.uk/endtime": "2016-02-05T14:00:00.000Z",
             "http://xapi.jisc.ac.uk/courseArea": {
                 "http://xapi.jisc.ac.uk/vle_mod_id": "LA101-200-2016S1-0",
+		"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
                 "id": "http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
             }
         },

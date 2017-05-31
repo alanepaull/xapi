@@ -1,5 +1,6 @@
-#vle_assignment_submitted statement template
-Revision: 1.3
+# vle_assignment_submitted statement template
+
+[Statement Template Changes](/version_changes.md#assignment-submitted)
 
 ## Purpose
 This activity records a user submitting an assignment
@@ -64,12 +65,7 @@ Example:
 			"name":{
 				"en":"xapi Assignment"
 			},
-			"description":{
-				"en":"xppi Assignment description"
-				}
-			},
-			
-		    "extensions":{
+		  	  "extensions":{
 				"http://xapi.jisc.ac.uk/dueDate": "2016-02-05T17:59:45.000Z"
 			}
 			
@@ -83,6 +79,8 @@ Common entity identifier: ContextB, as defined on the [common structures](/commo
 
 The context.contextActivities is property with a ‘grouping’ that allows statements to be associated to the activity described in the object entities as part of a larger whole. Different activity types can be found on the vocabulary page.
 
+The contextActivities.grouping property has an [ObjectA](/common_structures.md#objectb) as its value.
+
 Example:
 
 ``` javascript
@@ -93,14 +91,13 @@ Example:
                     "objectType":"Activity",
                     "id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4",
                     "definition":{
-                       
-						"type": "http://xapi.jisc.ac.uk/define/vle/course"
+                        "type": "http://xapi.jisc.ac.uk/define/vle/course"
                         "name":{
                             "en":"xAPI Basics"
-                        },
-                        "description":{
-                            "en":"xAPI Basics course for Learning Analytics enthusiasts"
-                        }
+                       },
+                    "extensions": {
+     		   	 "http://xapi.jisc.ac.uk/subType": "http://id.tincanapi.com/activitytype/lms"
+			}
                     }
                 }
             ]
@@ -111,12 +108,13 @@ Example:
 		
       		"http://xapi.jisc.ac.uk/courseArea": {
       		 	"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
-                "id": http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
+				"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
+                "id": "http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
 				},
 			
- 			"http://xapi.jisc.ac.uk/sessionId":"32456891",
-            "http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
-			"http://xapi.jisc.ac.uk/recipeVersion" : "vle_assignment_submittedV1.3"
+			"http://xapi.jisc.ac.uk/sessionId":"32456891",
+         	"http://id.tincanapi.com/extension/ip-address": "10.3.3.48",
+			"http://xapi.jisc.ac.uk/version" : "1.0"
 			}
 		}
 ```

@@ -1,5 +1,4 @@
-#session_timed_out statement template
-Revision: 1.3
+# session_timed_out statement template
 
 ## Purpose
 This activity indicates the activity provider has determined that the session was abnormally terminated either by an actor or due to a system failure.
@@ -48,7 +47,7 @@ Example:
         "extensions": {
 			"http://xapi.jisc.ac.uk/sessionId": "32456891",
 			"http://id.tincanapi.com/extension/ip-address" :"10.3.3.48"
-			"http://xapi.jisc.ac.uk/recipeVersion" : "session_timed_outV1.2"
+			"http://xapi.jisc.ac.uk/version" : "1.0"
              }
         }
 ```
@@ -68,9 +67,6 @@ The object.definition.type is "http://activitystrea.ms/schema/1.0/application". 
     "definition": {
         "type": "http://activitystrea.ms/schema/1.0/application",
         "name": {
-            "en": "A Moodle course"
-        },
-        "description": {
             "en": "A Moodle course"
         },
         "extensions": {
