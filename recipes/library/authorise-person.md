@@ -1,4 +1,4 @@
-#Authorisation statement template
+# Authorisation statement template
 Revision: 0.1
 
 ## Purpose
