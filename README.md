@@ -74,7 +74,7 @@ These will be split into seperate recipe statement templates
 <tr><td>Statement Template </td>   <td>JSON example</td> </tr>                                                         
 <tr><td> <a href = "/recipes/library/reading-list-view.md">Viewed Reading List</a></td><td>   </td> </tr>                                                           
 <tr><td> <a href = "/recipes/library/reading-list-item-view.md">Viewed Reading List item</a></td><td>   </td> </tr>        
-<tr><td> <a href = "/lbrary/econtent.md">Accessing econtent</a></td><td></td></tr>        
-<tr><td> <a href = "/lbrary/borrowing.md">Borrowed item</a></td><td></td> </tr>        
-<tr><td> <a href = "/lbrary/login.md">Login to system</a></td><td>  </td> </tr>        
+<tr><td> <a href = "/recipes/library/econtent.md">Accessing econtent</a></td><td></td></tr>        
+<tr><td> <a href = "/recipes/library/borrowing.md">Borrowed item</a></td><td></td> </tr>        
+<tr><td> <a href = "/recipes/library/login.md">Login to system</a></td><td>  </td> </tr>        
 </table>
