@@ -1,4 +1,4 @@
-# question_viewed statement template
+# quiz_question_viewed statement template
 Based on generic statement template resource_viewed (view.md).
 In this version the Moodle domain IRIs for subType are not definitive, but purely given as examples. Moodle domain experts will control these IRIs.
 
@@ -10,6 +10,8 @@ Natural language example of a typical statement: "John Smith viewed the first qu
 Examples:
 
 - [tbd]
+
+## Definition
 
 ### Actor
 The actor entity is used to identify the individual that is viewing the quiz or question. It uses the Jisc profile common entity [ActorA](/common_structures.md#actora).
@@ -133,31 +135,10 @@ The object identifies the quiz or question being viewed. It uses the Jisc Profil
       "en": "Sample question from quiz1"
     },
     "extensions": {
-      "http://xapi.jisc.ac.uk/subType": "http://moodle.org/question/multiple-choice"
+      "http://xapi.jisc.ac.uk/subType": "http://moodle.xapi.jisc.ac.uk/multiple-choice"
     }
   }
 }
-
-```
-
-### Example of viewing a a Moodle 'choice' type quiz activity
-
-``` javascript
-"object": {
-  "objectType": "Activity",
-  "id": "http://moodle.data.alpha.jisc.ac.uk/mod/choice/choice1",
-  "definition": {
-    "type": "http://xapi.jisc.ac.uk/vle/quiz",
-    "name": {
-      "en": "Sample quiz"
-    },
-    "extensions": {
-      "http://xapi.jisc.ac.uk/subType": "http://moodle.org/quiz/choice"
-    }
-  }
-}
-
-```
 
 ### Context
 Context is used to describe the module within which the quiz sits, or the quiz within which the question sits. If the device supports it, session Ids and ip-addresses can be recorded. Common entity identifier: For quiz - ContextA, as defined on the [common structures](/common_structures.md#contexta) page; for question - ContextB, as defined on the [common structures](/common_structures.md#contextB) page; ContextB enables the statement to identify the quiz as well as the question.
@@ -168,9 +149,9 @@ Context is used to describe the module within which the quiz sits, or the quiz w
 	<tr>
 		<td>For questions only: <br />
 		context.contextActivities [0..1]<br />
-		context.contextActivities.grouping [1]
+		context.contextActivities.parent [1]
 		</td>
-		<td>An optional property that holds a mandatory ‘grouping’ property. It allows a statement about a question to be associated with the quiz of which it forms a part.  The 'grouping' property has an <a href="#objecta">ObjectA</a> as its value.</td>
+		<td>An optional property that holds a mandatory parent property. It allows a statement about a question to be associated with the quiz of which it forms a part.  The 'parent' property has an <a href="#objecta">ObjectA</a> as its value.</td>
 	</tr>
 	<tr><td>context.platform [1]</td>
 	<td>The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes and should typically be a concise name by which the application is commonly known, for example "Moodle" or "Blackboard"</td></tr>
@@ -209,7 +190,7 @@ Context is used to describe the module within which the quiz sits, or the quiz w
 ``` javascript
 "context": {
 	"contextActivities":{
-	  "grouping":[
+	  "parent":[
 	    {
 	  	"objectType":"Activity",
 	        "id":"http://moodle.data.alpha.jisc.ac.uk/mod/quiz/quiz1",
