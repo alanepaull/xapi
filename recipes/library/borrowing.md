@@ -98,22 +98,19 @@ We need to work out what object.definition type is
 		<td>May be used to indicate the sub-type of this activity, if applicable for the recipe being used to create the statement. This qualifies the object.objectType, and is described on the [vocabularies](vocabulary.md#object-definition-extensions) page.</td>
 		<td>iri</td>
 	</tr>
-	
 	<tr>
 		<td>extensions.http://oclc.com/number</td>
 		<td>OCLC Number</td>
 		<td>string</td>
 	</tr>
-	
 		<tr>
 		<td>extensions.http://xapi.jisc.ac.uk/dewey_code"</td>
 		<td>Dewey Decimal Code</td>
 		<td>string</td>
 	</tr>
-	
 	<tr>
 		<td>extensions.http://xapi.jisc.ac.uk/item_location</td>
-		<td>Item locatition contains 3 properties, all of which are strings: http://id.tincanapi.com/extension/location , http://xapi.jisc.ac.uk/permanent_shelving" and http://xapi.jisc.ac.uk"</td>
+		<td>Item locatition contains 3 properties, all of which are strings: http://id.tincanapi.com/extension/location , http://xapi.jisc.ac.uk/permanent_shelving" and http://xapi.jisc.ac.uk/temporary_shelving"</td>
 		<td>JSON Object</td>
 	</tr>
 </table>
@@ -136,7 +133,7 @@ We need to work out what object.definition type is
 		"http://xapi.jisc.ac.uk/item_location": {
 				"http://id.tincanapi.com/extension/location": "ITEM_BRANCH_NAME",
 				"http://xapi.jisc.ac.uk/permanent_shelving": "ITEM_PERMANENT_SHELVING_LOCATION",
-				"http://xapi.jisc.ac.uk": "ITEM_TEMPORARY_SHELVING_LOCATION"
+				"http://xapi.jisc.ac.uk/temporary_shelving": "ITEM_TEMPORARY_SHELVING_LOCATION"
 			},
 			
 		}
