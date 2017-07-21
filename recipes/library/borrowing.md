@@ -202,8 +202,8 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
   "extensions": {
   
 	"http://xapi.jisc.ac.uk/library_borrower_category": "UG", // should this be a code
-    "http://xapi.jisc.ac.uk/library_loan_policy": "short", // should this be a code
-    "http://xapi.jisc.ac.uk/library_branch" : "Main library",  // should this be a code
+    	"http://xapi.jisc.ac.uk/library_loan_policy": "short", // should this be a code
+    	"http://xapi.jisc.ac.uk/library_branch" : "Main library",  // should this be a code
 	"http://xapi.jisc.ac.uk/library_return_date" : "2015-09-18T01:54:51.484Z"  
 	"http://xapi.jisc.ac.uk/library_renew_count" : 3 
 	"http://xapi.jisc.ac.uk/version": "x-ignore"
