@@ -73,8 +73,7 @@ The result entity containts the http response code
 ``` 
 
 ### Object
-
-
+Common entity identifier: ObjectA
 
 ### Example
 
@@ -98,9 +97,38 @@ The result entity containts the http response code
 
 
 ### Context
-Common entity identifier:
 
-
+<table>
+	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
+	<tr>
+		<td>context.platform [1]</td>
+		<td>The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes and should typically be a concise name by which the application is commonly known</td>
+		<td>string</td>
+	</tr>	
+	<tr>
+		<td>context.extensions.version [0..1]</td>
+		<td>Recommended, identifies the version of the Jisc xAPI profile found on the ReadMe page. <br/></td>
+		<td>decimal</td>
+	</tr>
+	<tr>
+		<td>context.extension.sessionId [0..1]</td>
+		<td>The VLE session ID, or a suitably hashed version of it. A value should be provided if this information is available.</td>
+		<td>string</td>
+	<tr> 
+		<td>context.extension.ip-address [1]</td>
+		<td>client's IP address. An IPv4 address is recommended.</td>
+		<td>ip address</td>
+	<tr> 
+		<td>context.extension.referrer [0..1]</td>
+		<td>refering url</td>
+		<td>URL</td>
+	<tr> 
+	<tr> 
+		<td>context.extension.browser_info [0..1]</td>
+		<td></td>
+		<td></td>
+	<tr> 
+</table>
 
 ### Example:
 
@@ -112,7 +140,7 @@ Common entity identifier:
 			"http://id.tincanapi.com/extensions/ip-address": "IP",
 			"http://id.tincanapi.com/extension/referrer": "HTTP_REFERRER",
 			"http://id.tincanapi.com/extension/browser-info": "HTTP_BROWSER_INFO",
-			"http://xapi.jisc.ac.uk/version": "1.0"
+			"http://xapi.jisc.ac.uk/version": "x-ignore"
 		}
 	}
 }
@@ -154,6 +182,7 @@ Common entity identifier:
 			}
 		}
 	},
+	
 	"context": {
 		"platform": "UxAPI",
 		"extensions": {
@@ -161,7 +190,7 @@ Common entity identifier:
 			"http://id.tincanapi.com/extensions/ip-address": "IP",
 			"http://id.tincanapi.com/extension/referrer": "HTTP_REFERRER",
 			"http://id.tincanapi.com/extension/browser-info": "HTTP_BROWSER_INFO",
-			"http://xapi.jisc.ac.uk/version": "1.0"
+			"http://xapi.jisc.ac.uk/version": "x-ignore"
 		}
 	}
 }
