@@ -214,3 +214,56 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
   }
 }
 ```
+
+### Full Example:
+``` javascript
+{
+    "version": "1.0.0",
+    "actor": {
+        "objectType": "Agent",
+        "name": "John Smith",
+        "account": {
+            "name": "PATRON_BARCODE",
+            "homePage": "HOMEPAGE" 
+        }
+    },
+	"verb": {
+        "id": "http://activitystrea.ms/schema/1.0/borrowed",
+        "display": {
+            "en": "borrowed"
+        }
+    },
+	"object": {
+		"objectType": "Activity",
+		"id": "http://library.universityofjisc.ac.uk/0123456789"   	(what would the iri of a book look like? http://classify.oclc.org/classify2/ClassifyDemo?owi=13447796) 	
+		"definition": {
+			"type": "http://id.tincanapi.com/activitytype/book",	(How do we work out from the data the type?)		
+			"name": { "en": "Intro to Java" },			   
+		 }
+		
+		"extensions": {
+			"http://oclc.com/number": "OCLC_NUMBER",
+			"http://xapi.jisc.ac.uk/dewey_code": "CALL_NUMBER"
+			"http://xapi.jisc.ac.uk/item_location": {
+					"http://id.tincanapi.com/extension/location": "ITEM_BRANCH_NAME",
+					"http://xapi.jisc.ac.uk/permanent_shelving": "ITEM_PERMANENT_SHELVING_LOCATION",
+					"http://xapi.jisc.ac.uk": "ITEM_TEMPORARY_SHELVING_LOCATION"
+				},
+				
+			}
+	},
+	"timestamp": "2015-09-18T01:54:51.484Z",
+	"context": {
+ 
+		"extensions": {
+  
+			"http://xapi.jisc.ac.uk/library_borrower_category": "UG", // should this be a code
+			"http://xapi.jisc.ac.uk/library_loan_policy": "short", // should this be a code
+			"http://xapi.jisc.ac.uk/library_branch" : "Main library",  // should this be a code
+			"http://xapi.jisc.ac.uk/library_return_date" : "2015-09-18T01:54:51.484Z"  
+			"http://xapi.jisc.ac.uk/library_renew_count" : 3 
+			"http://xapi.jisc.ac.uk/version": "x-ignore"
+	
+  }
+}
+```
