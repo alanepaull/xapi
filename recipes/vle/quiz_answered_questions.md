@@ -5,12 +5,6 @@ In this version the Moodle domain IRIs for subType are not definitive, but purel
 ## Purpose
 Use this template to create a specific statement for a student looking at a quiz or a question in a quiz.
 
-Natural language example of a typical statement: "John Smith viewed the first question in Quiz 1 (part of a module in his university Moodle VLE)."
-
-Examples:
-
-- [tbd]
-
 ## Definition
 
 ### Actor
@@ -148,6 +142,7 @@ The object identifies the question.
 
 ### Example
 
+``` javascript
  "result": {
       "response": "true",
       "completion": true,
@@ -156,7 +151,8 @@ The object identifies the question.
         "max": 1
       }
     },
-
+```
+	
 ### Context
 
 <table>
@@ -234,11 +230,7 @@ The object identifies the question.
 
 
 
-
-
-
-
-### Full Example
+###  Example
 
 ``` javascript
 "context": {
@@ -275,7 +267,7 @@ The object identifies the question.
 
 ```
 
-### Example for viewing question:
+## Full Example:
 
 ``` javascript
 
