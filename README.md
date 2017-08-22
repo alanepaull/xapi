@@ -36,6 +36,13 @@ These are the currently platform independent documented recipes:
 * [Blackboard VLE samples](vle/blackboard/Examples.md)
 * [Moodle VLE samples](vle/moodle/examples.md)
 
+
+## Study App
+<table>
+<tr><td>Statement Template </td><td>JSON Example</td></tr>
+<tr><td> <a href = "recipes/studyapps/mobile-app.md">Mobile content viewed </a></td><td><a href = "recipes/studyapps/mobile-app.md#example">Mobile_app content viewed </a></td> </tr>    
+</table>
+
 ## Draft
 * [WiFi associated/Presence](recipes/wifi-association.md)
 * [Library examples](https://github.com/jiscdev/xapi/tree/ds10-recipedev)(In development branch)
