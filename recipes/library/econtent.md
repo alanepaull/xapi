@@ -148,7 +148,7 @@ Common entity identifier: ObjectA
 
 
 ## Full Example
-
+``` javascript
 {
 	"version": "1.0.0",
 	"actor": {
@@ -181,8 +181,7 @@ Common entity identifier: ObjectA
 				"en": "an eResource made available via a proxy service"
 			}
 		}
-	},
-	
+	},	
 	"context": {
 		"platform": "UxAPI",
 		"extensions": {
@@ -194,3 +193,4 @@ Common entity identifier: ObjectA
 		}
 	}
 }
+```
