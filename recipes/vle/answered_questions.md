@@ -3,17 +3,17 @@
 In this version the Moodle domain IRIs for subType are not definitive, but purely given as examples. Moodle domain experts will control these IRIs.
 
 ## Purpose
-Use this template to create a specific statement for a student looking at a quiz or a question in a quiz.
+Use this template to create a specific statement for a student completing questions
 
 ## Definition
 
 ### Actor
-The actor entity is used to identify the individual that answered the question.
+The actor entity is used to identify the individual that answered the question or questions.
 
 #### Entity properties:
 Common entity identifier:  ActorA, as defined on the [common structures](/common_structures.md#actora) page.
 
-The actor entity describes the individual that answered the question.
+The actor entity describes the individual that answered the question or questions.
 
 ### Example:
 
