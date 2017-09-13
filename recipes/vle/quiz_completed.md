@@ -172,18 +172,7 @@ Context is used to describe the module within which the quiz sits. If the device
 
 ## Full Example
 
- "context": {
-      "extensions": {
-        "http://xapi.jisc.ac.uk/attempt": "Attempt 26",
-        "http://xapi.jisc.ac.uk/courseArea": {
-          "http://xapi.jisc.ac.uk/vle_mod_id": "Test1"
-        },
-        "http://id&46;tincanapi&46;com/extension/ip-address": "0:0:0:0:0:0:0:1",
-        "http://xapi.jisc.ac.uk/version": "x-2017-05-16",
-        "http://xapi.jisc.ac.uk/sessionId": "Iye9OqwM9O"
-      },
-      "platform": "Moodle"
-    },
+ 
     "actor": {
       "account": {
         "homePage": "http://localhost/moodle",
@@ -221,6 +210,18 @@ Context is used to describe the module within which the quiz sits. If the device
       },
       "id": "http://localhost/moodle/mod/quiz/view.php?id=10",
       "objectType": "Activity"
-    }
+    },
+	"context": {
+      "extensions": {
+        "http://xapi.jisc.ac.uk/attempt": "Attempt 26",
+        "http://xapi.jisc.ac.uk/courseArea": {
+          "http://xapi.jisc.ac.uk/vle_mod_id": "Test1"
+        },
+        "http://id&46;tincanapi&46;com/extension/ip-address": "0:0:0:0:0:0:0:1",
+        "http://xapi.jisc.ac.uk/version": "x-2017-05-16",
+        "http://xapi.jisc.ac.uk/sessionId": "Iye9OqwM9O"
+      },
+      "platform": "Moodle"
+    },
   }
 }```
