@@ -3,17 +3,15 @@
 In this version the Moodle domain IRIs for subType are not definitive, but purely given as examples. Moodle domain experts will control these IRIs.
 
 ## Purpose
-Use this template to create a specific statement for a student completing questions
+Use this template to create a specific Statement for a student answering 1 or more questions in a quiz, but not yet completing it.
 
 ## Definition
 
 ### Actor
-The actor entity is used to identify the individual that answered the question or questions.
+The Actor entity is used to identify the individual that answered the question or questions.
 
 #### Entity properties:
 Common entity identifier:  ActorA, as defined on the [common structures](/common_structures.md#actora) page.
-
-The actor entity describes the individual that answered the question or questions.
 
 ### Example:
 
@@ -23,18 +21,16 @@ The actor entity describes the individual that answered the question or question
   "name": "John Smith",
   "account": {
     "name": "jsmith12",
-
+    "homePage": "https://courses.alpha.jisc.ac.uk/moodle"
   }
 }
 ```
 
 ### Verb
-The verb [anwered](../vocabulary.md#verbs). It denotes the action of the actor repling to a question, where the object is generally an activity representing the question
+The Verb [answered](vocabulary.md#verbs). It denotes the action of the Actor answering a question, where the Object is generally an activity representing the question or questions.
 
 #### Entity properties:
 Common entity identifier:  VerbA, as defined on the [common structures](/common_structures.md#verba) page.
-
-The actor entity describes the individual that answered the question.
 
 ### Example:
 
@@ -49,7 +45,7 @@ The actor entity describes the individual that answered the question.
 
 ### Object
 
-The object identifies the question.
+The Object identifies the question or questions.
 
 ### Entity properties:
 <table>
@@ -61,12 +57,12 @@ The object identifies the question.
 	</tr>
 	<tr>
 		<td>object.id [1]</td>
-		<td>An identifier for the quiz.</td>
+		<td>An identifier for the quiz</td>
 		<td>iri</td>
 	</tr>
 	<tr>
 		<td>object.definition.type [1]</td>
-		<td>Indicates the type of the object of the statement. It is required and valid values are listed on the <a href="vocabulary.md#activity-types">vocabulary page</a></td>
+		<td>Indicates the type of the Object of the Statement. It is required and valid values are listed on the [vocabulary page](vocabulary.md#activity-types).</td>
 		<td>iri</td>
 	</tr>
 	<tr>
@@ -111,7 +107,7 @@ The object identifies the question.
 ### Entity properties:
 
 <table>
-	
+	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
 	<tr>
 		<td>result.score.max [0..1]</td>
 		<td>The highest possible score</td>
@@ -155,6 +151,8 @@ The object identifies the question.
 	
 ### Context
 
+#### Entity properties:
+
 <table>
 	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
 	<tr>
@@ -187,84 +185,42 @@ The object identifies the question.
 	<tr> 	
 </table>
 
-#### Entity properties:
-
+#### Example:
+``` javascript
   "context": {
     
       "platform": "Moodle",
-	  
-	  
-      "contextActivities": {
-        "parent": [
-          {
-            "definition": {
-              "extensions": {
-                "http://xapi&46;jisc&46;ac&46;uk/subType": "http://xapi.jisc.ac.uk/vle/quiz"
-              },
-              "description": {
-                "en": "A module"
-              },
-              "name": {
-                "en": "mquiz"
-              },
-              "type": "http://xapi.jisc.ac.uk/vle/quiz"
-            },
-            "id": "http://localhost/moodle/mod/quiz/view.php?id=10",
-            "objectType": "Activity"
-          }
-        ]
-      }
-	  
-	    "extensions": {
-        "http://xapi&46;jisc&46;ac&46;uk/courseArea": {
-          "http://xapi&46;jisc&46;ac&46;uk/vle_mod_id": "Test1"
-        },
-		
-        "http://id&46;tincanapi&46;com/extension/ip-address": "0:0:0:0:0:0:0:1",
-        "http://xapi&46;jisc&46;ac&46;uk/version": "x-2017-05-16",
-        "http://xapi&46;jisc&46;ac&46;uk/sessionId": "Iye9OqwM9O"
-      },
-	  
-	  
-    },
-
-
-
-###  Example
-
-``` javascript
-"context": {
+      	  
       "extensions": {
+	"http://xapi&46;jisc&46;ac&46;uk/version": "x-2017-05-16",
+	"http://xapi&46;jisc&46;ac&46;uk/sessionId": "Iye9OqwM9O", 
+        "http://id&46;tincanapi&46;com/extension/ip-address": "0:0:0:0:0:0:0:1", 
         "http://xapi&46;jisc&46;ac&46;uk/courseArea": {
-          "http://xapi&46;jisc&46;ac&46;uk/vle_mod_id": "Test1"
+		"http://xapi&46;jisc&46;ac&46;uk/vle_mod_id": "Test1"
+        	},
         },
-        "http://id&46;tincanapi&46;com/extension/ip-address": "0:0:0:0:0:0:0:1",
-        "http://xapi&46;jisc&46;ac&46;uk/version": "x-2017-05-16",
-        "http://xapi&46;jisc&46;ac&46;uk/sessionId": "Iye9OqwM9O"
-      },
-      "platform": "Moodle",
+        
       "contextActivities": {
         "parent": [
           {
+            "id": "http://localhost/moodle/mod/quiz/view.php?id=10",
+            "objectType": "Activity",
+            "description": {
+              "en": "A quiz"
+              },
+            "name": {
+              "en": "mquiz"
+              },
+            "type": "http://xapi.jisc.ac.uk/vle/quiz"
+              },
             "definition": {
               "extensions": {
                 "http://xapi&46;jisc&46;ac&46;uk/subType": "http://xapi.jisc.ac.uk/vle/quiz"
               },
-              "description": {
-                "en": "A module"
-              },
-              "name": {
-                "en": "mquiz"
-              },
-              "type": "http://xapi.jisc.ac.uk/vle/quiz"
-            },
-            "id": "http://localhost/moodle/mod/quiz/view.php?id=10",
-            "objectType": "Activity"
           }
         ]
       }
     },
-
 ```
 
 ## Full Example:
@@ -272,11 +228,7 @@ The object identifies the question.
 ``` javascript
 
 {
-
   "statement": {
-
-  
-
     "actor": {
       "account": {
         "homePage": "http://localhost/moodle",
