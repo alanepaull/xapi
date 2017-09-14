@@ -27,7 +27,7 @@ Common entity identifier:  ActorA, as defined on the [common structures](/common
 ```
 
 ### Verb
-The Verb [answered](vocabulary.md#verbs). It denotes the action of the Actor answering a question, where the Object is generally an activity representing the question or questions.
+The Verb [answered](/vocabulary.md#verbs). It denotes the action of the Actor answering a question, where the Object is generally an activity representing the question or questions.
 
 #### Entity properties:
 Common entity identifier:  VerbA, as defined on the [common structures](/common_structures.md#verba) page.
@@ -175,7 +175,7 @@ The Object identifies the question or questions.
 		<td>ip address</td>
 	<tr> 
 		<td>context.extension.courseArea [0..1]</td>
-		<td>The academic context in which this activity is situated (e.g. umbrella course, or parent area). This could be a UDD Module Instance ID or VLE Module ID.. More information can be found on the <a href="vocabulary.md#course-area">vocabularies page</a>..</td>
+		<td>The academic context in which this activity is situated (e.g. umbrella course, or parent area). This could be a UDD Module Instance ID or VLE Module ID.. More information can be found on the [vocabularies page](/vocabulary.md#course-area).</td>
 		<td>JSON object</td>
 	<tr>
 	<tr> 
