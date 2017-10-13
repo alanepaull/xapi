@@ -272,36 +272,35 @@ The Object identifies the question or questions.
          }
      },
      
-     "context": {  
-       "platform": "Moodle",    	  
-           "extensions": {
-       "http://xapi&46;jisc&46;ac&46;uk/version": "x-2017-05-16",
-       "http://xapi&46;jisc&46;ac&46;uk/sessionId": "Iye9OqwM9O", 
-       "http://id&46;tincanapi&46;com/extension/ip-address": "0:0:0:0:0:0:0:1", 
-       "http://xapi&46;jisc&46;ac&46;uk/courseArea": {
-     	  "http://xapi&46;jisc&46;ac&46;uk/vle_mod_id": "Test1"
-          },
-       },
-       "contextActivities": {
-         "parent": [
-           {
-           "id": "http://localhost/moodle/mod/quiz/view.php?id=10",
-           "objectType": "Activity",
-           "description": {
-             "en": "A quiz"
-              },
-           "name": {
-             "en": "mquiz"
-              },
-           "type": "http://xapi.jisc.ac.uk/vle/quiz"
-           },
-           "definition": {
-             "extensions": {
-               "http://xapi&46;jisc&46;ac&46;uk/subType": "http://xapi.jisc.ac.uk/vle/quiz"
-               },
-             }
-            ]
-           }
-         }
+     "context": {
+     	"platform": "Moodle",
+     	"extensions": {
+     		"http://xapi.jisc.ac.uk/version": "x-2017-05-16",
+     		"http://xapi.jisc.ac.uk/sessionId": "Iye9OqwM9O",
+     		"http://id.tincanapi.com/extension/ip-address": "0:0:0:0:0:0:0:1",
+     		"http://xapi.jisc.ac.uk/courseArea": {
+     			"http://xapi.jisc.ac.uk/vle_mod_id": "Test1"
+     		},
+     	},
+     	"contextActivities": {
+     		"parent": [{
+     				definition: {
+     					"id": "http://localhost/moodle/mod/quiz/view.php?id=10",
+     					"objectType": "Activity",
+     					"description": {
+     						"en": "A quiz"
+     					},
+     					"name": {
+     						"en": "mquiz"
+     					},
+     					"type": "http://xapi.jisc.ac.uk/vle/quiz",
 
+
+     					"extensions": {
+     						"http://xapi.jisc.ac.uk/subType": "http://xapi.jisc.ac.uk/vle/quiz"
+     					}
+     				}
+     			]
+     		}
+     	}
 ```
