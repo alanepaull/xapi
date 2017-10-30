@@ -3,12 +3,6 @@
 ## Purpose
 This statement defines the structure and terms to record a post or reply to a forum within a VLE.
 
-There is a hierarchy of items that need to be identified in this statement:
-
-1. A parent forum. This information is required for the context of the statement.
-2. The discussion or thread. This is the object for the statement.
-3. Any posts to the discussion, actual content of the post is part of the result entity, including the original post and replies.
-
 ### Actor
 
 Common entity identifier: [ActorA](../common_structures.md#actora)
@@ -114,9 +108,10 @@ The Context describes the parent forum of the thread, and optionally, the course
     "platform": "Moodle",
     "extensions": {
     		"http://jisc.ac.uk/forumArea": "http://moodle.data.alpha.jisc.ac.uk/mod/forum/view.php?id=138371",
+			
 		"http://xapi.jisc.ac.uk/courseArea": {
       		 	"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
-			"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
+				"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
 			},
 			
 	"http://xapi.jisc.ac.uk/sessionId":"32456891",
