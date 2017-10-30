@@ -1,4 +1,4 @@
-# xAPI recipes for the Jisc Learning Analytics Project v0.5
+# xAPI recipes for the Jisc Learning Analytics Project v1.0
 
 ## Repository Workflow
 The simplest way of contributing xAPI recipes works as follows:
@@ -13,41 +13,61 @@ You can do all this through the Github GUI, but you're welcome to use any other 
 
 If the need arises, particular versions will get their own branches, but until that time, everything is merged into the main branch. Releases will be made after the group has come to an agreement.
 
-## Vocabulary and Common Structures
+## Statement Vocabulary and Common Structures
 
 * [Vocabulary](vocabulary.md) gives the IRIs and definitions for verbs, activity types, etc, as well as for extensions used in the recipes.
 * [Common Structures](common_structures.md) outlines common patterns used across different recipes.
 
 # Recipes
-As far as possible all entities are the same across recipes and are identified by a version.
+Here are descriptions of statements that can be sent to the Jisc LRW, full statement examples, data needed to create the statement.  As far as possible all entities are the same across statements and are identified by a version.
 
-## VLE examples
-These are the currently platform independent documented recipes:
+## VLE
 
-* [Logged in](recipes/login.md)
-* [Logged out](recipes/logout.md)
-* [VLE resource viewed](recipes/Module-View.md)
-* [Session timeout](recipes/Session-timeout.md)
-* [Assignment Graded](recipes/assignment-graded.md)
-* [Assignment Submitted](recipes/assignment-submitted.md)
-* [Attended learning activity](recipes/attendance.md)
+These are the currently platform independent documented statements related to virtual learning enviroments.
 
-### Specific VLE examples
-* [Blackboard VLE samples](vle/blackboard/Examples.md)
-* [Moodle VLE samples](vle/moodle/examples.md)
-
-
-## Study App
 <table>
-<tr><td>Statement Template </td><td>JSON Example</td></tr>
-<tr><td> <a href = "recipes/studyapps/mobile-app.md">Mobile content viewed </a></td><td><a href = "recipes/studyapps/mobile-app.md#example">Mobile_app content viewed </a></td> </tr>    
+<tr><td>Statement Template </td>   <td>JSON example</td> </tr>
+<tr><td> <a href = "/recipes/vle/login.md">Logged in</a></td><td> <a href = "vle/moodle/login.js">Logged in Moodle </a> <br/><a href = "vle/blackboard/loggedin.json"> Logged In Blackboard   </a>   </td> </tr>                                                           
+<tr><td> <a href = "/recipes/vle/logout.md>Logged out">Logged out</a></td><td> <a href = "vle/moodle/logout.js">Logged out Moodle </a>  <br/> <a href = "vle/blackboard/loggedout.json"> Logged out Blackboard   </a>    </td> </tr>    
+<tr><td> <a href = "/recipes/vle/Module-View.md">VLE resource viewed   </a></td><td><a href = "vle/moodle/moduleview.js">Moodle module viewed </a> <br/> <a href = "vle/blackboard/course_access.json"> Blackboard course acccess  </a> <br/> <a href="vle/blackboard/course_content_access.json">Blackboard content accessed</a></td> </tr>    
+<tr><td> <a href = "/recipes/vle/Session-timeout.md">Session timeout   </a></td><td><a href = "vle/blackboard/session_timeout.json">Blackboard session timeout </a>    </td></tr>    
+<tr><td><a href =  "/recipes/vle/assignment-graded.md">Assignment Graded   </a></td><td> <a href = "vle/moodle/asssignment_graded.json">Assignment graded in Moodle</a><br/> <a href="vle/blackboard/asssignment_graded.json">Assignment graded in Blackboard </a>   </td></tr>    
+<tr><td><a href =  "/recipes/vle/assignment-submitted.md">Assignment Submitted  </a></td><td><a href = "vle/moodle/assignment_submitted.json">Assignment submitted in Moodle</a><br/> <a href="vle/blackboard/assignment_submitted.json">Assignment submitted in Blackboard</a>   </td></tr>    
+<tr><td><a href =  "/recipes/vle/forum-contribution.md">Forum Contribution</a></td><td>Draft</td></tr>    
+<tr><td><a href =  "/recipes/vle/gradebook-view.md">Student views gradebook</a></td><td>Draft</td></tr>   
+<tr><td><a href =  "/recipes/vle/video-view.md">Viewing Online Material</a></td><td>Draft</td></tr> 
+
+
 </table>
 
-## Draft
-* [WiFi associated/Presence](recipes/wifi-association.md)
-* [Library examples](https://github.com/jiscdev/xapi/tree/ds10-recipedev)(In development branch)
+### All VLE statement examples
+* [Blackboard VLE samples] (vle/blackboard/Examples.md)
+* [Moodle VLE samples] (vle/moodle/examples.md)
+
+## Student Goal app
+Statements related to the Student Goal app
+
+## Presence and Attendance
+
+## Patterns
+
+
+<table>
+<tr>Pattern<td>Statement Template </td><td>JSON Example</td></tr>
+<tr><td>Tracking App</td>  <td><a href = "recipes/studyapps/target-set.md">Set a target</a></td>  <td> JSON Example </td></tr>
+<tr><td></td>  <td><a href = "recipes/studyapps/target-activity.md">Record an activity against a target</a></td>  <td> JSON Example </td></tr>
+<tr><td></td>  <td><a href = "recipes/studyapps/target-reached.md">Reach a target</a></td>  <td> JSON Example </td></tr>
+<tr><td></td>  <td><a href = "recipes/studyapps/target-update.md">Post an update</a></td>  <td> JSON Example </td></tr>
+
+</td><td><a href = "recipes/attendance.md#example">Attended learning activity </a></td> </tr>    
+</table>
+
+
 
 
 ## Predictive Model Output
-* [Alerting JSON](/lap/apereo/model_output.js)
-* [Alerting](/lap/apereo/model_output.md)
+* [Alerting JSON] (/lap/apereo/model_output.js)
+* [Alerting] (/lap/apereo/model_output.md)
+
+
+
