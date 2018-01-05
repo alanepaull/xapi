@@ -58,6 +58,28 @@ Statements related to the Student Goal app
 <tr><td> <a href = "recipes/studyapps/mobile-app.md">Mobile content viewed </a></td><td><a href = "recipes/studyapps/mobile-app.md#example">Mobile_app content viewed </a></td> </tr>    
 </table>
 
+## Library
+Library Reading List Statements: 
+
+<table>
+    <tr><td>Statement Template</td><td>JSON example</td><td>Input TSV definitions</td><td>JSON Template</td></tr>
+    <tr><td><a href = "recipes/library/reading-list-view.md">Reading List: Viewed List</a></td><td></td><td><a href="recipes/universal-xapi-translator/library-viewed-reading-list-input.md">library-viewed-reading-list-input.md</a></td><td><a href="recipes/universal-xapi-translator/library-viewed-reading-list-template.json">library-viewed-reading-list-template.json</a></td></tr> 
+    <tr><td> <a href = "recipes/library/reading-list-item-view.md">Reading List: Viewed List Item</a></td><td></td><td><a href="recipes/universal-xapi-translator/library-viewed-reading-list-item-input.md">library-viewed-reading-list-item-input.md</a></td><td><a href="recipes/universal-xapi-translator/library-viewed-reading-list-item-template.json">library-viewed-reading-list-item-template.json</a></td></tr>  
+</table>
+
+Library Borrowing and Access Statements: 
+<table>
+<tr><td>Statement Template</td><td>JSON example</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
+<tr><td> <a href = "/recipes/library/library-viewed-econtent.md">Library Item Accessing econtent</a></td><td></td><td><a href="recipes/universal-xapi-translator/library-viewed-econtent-input.md">library-viewed-econtent-input.md</a></td><td><a href="recipes/universal-xapi-translator/library-viewed-econtent-template.json">library-viewed-econtent-template.json</a></td></tr>       <tr><td> <a href = "/recipes/library/library-item-borrowing.md">Library item: Borrowed item</a></td><td></td> <td><a href="recipes/universal-xapi-translator/library-item-borrowed-input.md">library-item-borrowed-input.md</a></td><td><a href="recipes/universal-xapi-translator/library-item-borrowed-template.json">library-item-template.json</td></tr>    
+</table>
+
+Library System Access Statements:
+
+<table>
+<tr><td>Statement Template</td><td>JSON example</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
+<tr><td> <a href = "/recipes/library/login.md">Login to system</a></td><td>  </td> <td>   </td><td>   </td></tr>        
+</table>
+
 ## Tracking App
 These will be split into seperate recipe statement templates
 <table>

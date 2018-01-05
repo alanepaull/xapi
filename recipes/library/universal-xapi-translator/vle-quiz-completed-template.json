@@ -1,0 +1,55 @@
+{
+	"version": "1.0.0",
+	"actor": {
+	  "objectType": "Agent",
+	  "account": {
+		"name": "**USERNAME**",
+		"homePage": "**HOMEPAGE**"
+	  }
+	},
+  "timestamp":"**TIMESTAMP**",
+  "result": {
+	"duration": "**DURATION**",
+	"completion": **COMPLETION**,
+	"score": {
+	  "max": **SCORE_MAX**,
+	  "min": **SCORE_MIN**,
+	  "raw": **SCORE_RAW**,
+	  "scaled": **SCORE_SCALED**
+	}
+  },
+  "verb": {
+	"id": "http://adlnet.gov/expapi/verbs/completed",
+	"display": {
+	  "en": "completed"
+	}
+  },
+
+  "object": {
+	"objectType": "Activity",
+	"id": "**OBJECT_ID**",
+		"definition": {
+		  "name": {
+			"en": "**OBJECT_NAME**"
+		  },
+		  "type": "http://xapi.jisc.ac.uk/vle/quiz"
+		}
+  },
+	  
+  "context": {
+	"extensions": {
+	  "http://xapi.jisc.ac.uk/attempt": "**ATTEMPT_NUMBER**",
+	  "http://xapi.jisc.ac.uk/courseArea": {
+		"http://xapi.jisc.ac.uk/vle_mod_id": "**VLE_MOD_ID**",
+				"http://xapi.jisc.ac.uk/uddModInstanceID": "**UDD_MOD_INST_ID**"
+		},
+
+		"http://xapi.jisc.ac.uk/sessionId": "**SESSION_ID**",
+		"http://id.tincanapi.com/extension/ip-address": "**CLIENT_IP**",
+		"http://xapi.jisc.ac.uk/version": "1.0.1"
+	},
+	"platform": "**PLATFORM"
+  }
+}
+}
+

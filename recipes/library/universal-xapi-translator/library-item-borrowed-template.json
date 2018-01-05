@@ -1,0 +1,49 @@
+{
+    "version": "1.0.0",
+    "actor": {
+        "objectType": "Agent",
+        "name": "John Smith",
+        "account": {
+            "name": "**USER_ID**",
+            "homePage": "**HOMEPAGE**" 
+        }
+    },
+	"verb": {
+        "id": "http://activitystrea.ms/schema/1.0/borrowed",
+        "display": {
+            "en": "borrowed"
+        }
+    },
+	"object": {
+		"objectType": "Activity",
+		"id": "**ITEM_ID**" 
+		"definition": {
+			"type": "**ITEM_TYPE**",	
+			"name": { "en": "**ITEM_NAME" },			   
+		 }
+		
+		"extensions": {
+			"http://oclc.com/number": "**OCLC_NUMBER**",
+			"http://xapi.jisc.ac.uk/dewey_code": "**CALL_NUMBER**"
+			"http://xapi.jisc.ac.uk/item_location": {
+					"http://id.tincanapi.com/extension/location": "**ITEM_BRANCH_NAME**",
+					"http://xapi.jisc.ac.uk/permanent_shelving": "**ITEM_PERMANENT_SHELVING_LOCATION**",
+					"http://xapi.jisc.ac.uk": "**ITEM_TEMPORARY_SHELVING_LOCATION**"
+				},
+				
+			}
+	},
+	"timestamp": "2015-09-18T01:54:51.484Z",
+	"context": {
+ 
+		"extensions": {
+  
+			"http://xapi.jisc.ac.uk/library_borrower_category": "**BORROWER_CAT**",
+			"http://xapi.jisc.ac.uk/library_loan_policy": "**LOAN_POLICY", 
+			"http://xapi.jisc.ac.uk/library_branch" : "**BRANCH**",  
+			"http://xapi.jisc.ac.uk/library_return_date" : 
+			"http://xapi.jisc.ac.uk/library_renew_count" : **RENEWAL_COUNT** 
+			"http://xapi.jisc.ac.uk/version": "1.0.1"
+	
+  }
+}

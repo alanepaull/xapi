@@ -1,0 +1,45 @@
+{
+	"version": "1.0.0",
+	"timestamp": "**TIMESTAMP**",
+	"actor": {
+		"objectType": "Agent",
+		"account": {
+			"name": "**USERNAME**",
+			"homePage": "**HOMEPAGE**"
+		}
+	},
+	"object": {
+		"objectType": "Activity",
+		"id": "**OBJECT_ID**",
+		"definition": {
+			"type": "http://xapi.jisc.ac.uk/vle/content",
+			"name": {
+				"en": "**OBJECT_NAME**"
+			}
+		},
+		"extensions": {
+			"http://xapi.jisc.ac.uk/subType": "**SUBTYPE**"
+		}
+
+	},
+	"verb": {
+		"id": "http://id.tincanapi.com/verb/viewed",
+		"display": {
+			"en": "viewed"
+		}
+	},
+	"context": {
+		"platform": "**PLATFORM**",
+		"extensions": {
+
+			"http://xapi.jisc.ac.uk/courseArea": {
+				"http://xapi.jisc.ac.uk/vle_mod_id": "**VLE_MOD_ID**",
+				"http://xapi.jisc.ac.uk/uddModInstanceID": "**UDD_MOD_INST_ID**"
+			},
+
+			"http://xapi.jisc.ac.uk/sessionId": "**SESSION_ID**",
+			"http://id.tincanapi.com/extension/ip-address": "**CLIENT_IP**",
+			"http://xapi.jisc.ac.uk/version": "1.0"
+		}
+	}
+}

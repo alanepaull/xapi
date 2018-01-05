@@ -1,11 +1,8 @@
-# read-list-viewed statement template
-
-
-This statement template is in draft. 
+# read-list-item-viewed statement template
 
 Based on generic template statement: [Viewed](/generic/view.md)
 
-[Statement Template Changes](/version_changes.md#library-resource-viewed)
+[Statement Template Changes](/version_changes.md#library-resource-item-viewed)
 
 ## Purpose
 This template defines the structure and terms to record the experience of viewing a reading list

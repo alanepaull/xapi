@@ -1,8 +1,5 @@
 # read-list-viewed statement template
 
-
-This statement template is in draft. 
-
 Based on generic template statement: [Viewed](/generic/view.md)
 
 [Statement Template Changes](/version_changes.md#library-reading-list-viewed)
@@ -22,10 +19,9 @@ The actor entity describes the individual that is viewing the reading list.
     "version": "1.0.0",
     "actor": {
         "objectType": "Agent",
-        "name": "John Smith",
         "account": {
-            "name": "2",
-            "homePage": "<iri of homepage>"
+            "name": "stu1",
+            "homePage": "https://library.alpha.jisc.ac.uk/"
         }
     },
 ```
@@ -45,6 +41,7 @@ The Verb,[viewed](/vocabulary.md#verbs) denotes the action of the user's browser
         }
     },
 ```
+
 ### Context
 Common entity identifier: ContextA, as defined on the [common structures](/common_structures.md#contexta) page.
 The courseArea is required and gives information reguarding the module the reading list belongs to. See the [vocabularies](../vocabulary.md#coursearea-properties) page for more information

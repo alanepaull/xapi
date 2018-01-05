@@ -1,0 +1,64 @@
+{
+  "version": "1.0.0",
+  "actor": {
+    "objectType": "Agent",
+    "account": {
+      "name": "**STUDENT_ID**",
+      "homePage": "**HOMEPAGE**"
+    }
+  },
+  "verb": {
+        "id": "http://adlnet.gov/expapi/verbs/attended",
+        "display": {
+            "en": "attended"
+        }
+    },
+  "object": {
+    "objectType": "Activity",
+    "id": "**HOMEPAGE**/event/**EVENT_ID**",
+    "definition": {
+      "type": "http://xapi.jisc.ac.uk/event_timetabled/",
+      "name": {
+        "en": "**EVENT_NAME**"
+        },
+      "description": {
+        "en": "**EVENT_DESCRIPTION**"
+        },
+        "extensions": {
+          "http://xapi.jisc.ac.uk/subType": "**HOMEPAGE**/event_type/**EVENT_TYPE**",
+          "http://xapi.jisc.ac.uk/event_type_description": "**EVENT_TYPE_DESCRIPTION**",
+        "http://xapi.jisc.ac.uk/event_max_count": "**EVENT_MAX_COUNT**",
+        "http://xapi.jisc.ac.uk/event_mandatory": "**EVENT_MANDATORY**",
+        "http://xapi.jisc.ac.uk/starttime": "**START_TIME**",
+        "http://xapi.jisc.ac.uk/endtime": "**END_TIME**"
+      }
+      }
+    },
+	 "result":{
+        "completion":**CALCULATED_COMPLETE**,
+        "extensions": {
+            "http://xapi.jisc.ac.uk/attendance_late" : "**ATTENDANCE_LATE**",
+            "http://xapi.jisc.ac.uk/attendance_category" : "**ATTENDANCE_CATEGORY**"
+        }
+    },
+    "context": {
+      "instructor": {
+         "objectType": "Agent",
+         "name": "instructor",
+          "account": {
+            "name": "**STAFF_ID**",
+           "homePage": "**HOMEPAGE**"
+         }
+        },
+       "extensions": {
+		   "http://xapi.jisc.ac.uk/courseArea": {
+				"http://xapi.jisc.ac.uk/udddCourseInstanceId": "**COURSE_INSTANCE_ID**",
+				"http://xapi.jisc.ac.uk/uddModInstanceID": "**MOD_INSTANCE_ID**"
+			},
+			"http://xapi.jisc.ac.uk/version": "1.0.1"
+       },
+        "platform": "Attendance"
+
+    },
+	"timestamp":"**START_TIME**"
+ }

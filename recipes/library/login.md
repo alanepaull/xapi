@@ -1,9 +1,5 @@
 # library_system_logged_in statement template
 
-This statement template is in draft. 
-
-Based on generic template statement: [Login](/generic/login.md)
-
 [Statement Template Changes](/version_changes.md#library-logged-in)
 
 ## Purpose

@@ -1,0 +1,38 @@
+{
+	"version": "1.0.0",
+	"timestamp": "**TIMESTAMP**",
+	"actor": {
+		"objectType": "Agent",
+		"account": {
+			"name": "**USERNAME**",
+			"homePage": "**HOMEPAGE**"
+		}
+	},
+	"verb": {
+		"id": "https://brindlewaye.com/xAPITerms/verbs/loggedout",
+		"display": {
+			"en": "logged out of"
+		}
+	},
+	"context": {
+		"platform": "**PLATFORM**",
+		"extensions": {
+			"http://xapi.jisc.ac.uk/sessionId": "**SESSION_ID**",
+			"http://id.tincanapi.com/extension/ip-address": "**CLIENT_IP**",
+			"http://xapi.jisc.ac.uk/version": "1.0"
+		}
+	},
+	"object": {
+		"objectType": "Activity",
+		"id": "**OBJECT_ID**",
+		"definition": {
+			"type": "http://activitystrea.ms/schema/1.0/application",
+			"name": {
+				"en": "**OBJECT_NAME**"
+			},
+			"extensions": {
+				"http://xapi.jisc.ac.uk/subType": "**SUBTYPE**"
+			}
+		}
+	}
+}

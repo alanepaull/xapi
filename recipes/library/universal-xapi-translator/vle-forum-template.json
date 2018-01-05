@@ -1,0 +1,45 @@
+{
+	"version": "1.0.0",
+	"timestamp": "**TIMESTAMP**",
+	"actor": {
+		"objectType": "Agent",
+		"account": {
+			"name": "**USERNAME**",
+			"homePage": "**HOMEPAGE**"
+		}
+	},
+	"verb": {
+		"id": "**ACTION**",
+		"display": {
+			"en": "**ACTION_DISPLAY**"
+		}
+	},
+	"result": {
+		"response": "**RESULT**"
+	},
+	"object": {
+		"objectType": "Activity",
+		"id": "**OBJECT_ID",
+		"definition": {
+			"type": "http://id.tincanapi.com/activitytype/forum-topic",
+			"name": {
+				"en": "**OBJECT_NAME"
+			}
+		}
+	},
+	"context": {
+		"platform": "**PLATFORM**",
+		"extensions": {
+			"http://jisc.ac.uk/forumArea": "**FORUM_AREA**",
+
+			"http://xapi.jisc.ac.uk/courseArea": {
+				"http://xapi.jisc.ac.uk/vle_mod_id": "**VLE_MOD**",
+				"http://xapi.jisc.ac.uk/uddModInstanceID": "**MOD_INSTANCE_ID"
+			},
+
+			"http://xapi.jisc.ac.uk/sessionId": "**SESSIONID**",
+			"http://id.tincanapi.com/extension/ip-address": "**CLIENT_IP**",
+			"http://xapi.jisc.ac.uk/version": "1.0.1"
+		}
+    }
+}

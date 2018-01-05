@@ -1,0 +1,46 @@
+{
+	"version": "1.0.0",
+	"actor": {
+		"objectType": "Agent",
+		"account": {
+			"name": "**UNAME**",
+			"homePage": "**HOMEPAGE**"
+		}
+	},
+	"timestamp": "**TIMESTAMP**",
+	"verb": {
+		"id": "http://id.tincanapi.com/verb/viewed",
+		"display": {
+			"en": "viewed"
+		}
+	},
+	"result": {
+		"completion": "COMPLETED",
+		"response": "**HTTP_RESPONSE**"
+	},
+	"object": {
+		"objectType": "Activity",
+		"id": "**HTTP_REQUEST**",
+		"definition": {
+			"type": "http://xapi.jisc.ac.uk/reading-list",
+			"name": {
+				"en": "reading-list"
+			},
+			"description": {
+				"en": "an eResource made available via a proxy service"
+			}
+		}
+	},
+	"context": {
+		"platform": "**PLATFORM**",
+		"extensions": {
+			"http://xapi.jisc.ac.uk/sessionId": "**SESSION_ID**",
+			"http://id.tincanapi.com/extensions/ip-address": "**CLIENT_IP**",
+			"http://id.tincanapi.com/extension/referrer": "**HTTP_REFERRER**",
+			"http://id.tincanapi.com/extension/browser-info": "**HTTP_BROWSER_INFO**",
+			"http://xapi.jisc.ac.uk/version": "1.0.1"
+		}
+
+	}
+
+}
